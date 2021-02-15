@@ -1,0 +1,2420 @@
+fileFormatVersion: 2
+guid: c92a6720de4ddc3408f72c559cea07b1
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5483135068401289112
+    second: armored-npcs_0
+  - first:
+      213: 2909577059697080746
+    second: armored-npcs_1
+  - first:
+      213: -7066846665111702182
+    second: armored-npcs_2
+  - first:
+      213: 6942439889974785982
+    second: armored-npcs_3
+  - first:
+      213: -2172423665911708990
+    second: armored-npcs_4
+  - first:
+      213: 7062735988165136742
+    second: armored-npcs_5
+  - first:
+      213: -1611049556470937833
+    second: armored-npcs_6
+  - first:
+      213: -6864673191271793915
+    second: armored-npcs_7
+  - first:
+      213: -3678479931248333730
+    second: armored-npcs_8
+  - first:
+      213: 6872765082524961732
+    second: armored-npcs_9
+  - first:
+      213: 1518786971052098298
+    second: armored-npcs_10
+  - first:
+      213: 3313284013200689662
+    second: armored-npcs_11
+  - first:
+      213: -7208094973143620172
+    second: armored-npcs_12
+  - first:
+      213: 346294869208141654
+    second: armored-npcs_13
+  - first:
+      213: 5579846360805538597
+    second: armored-npcs_14
+  - first:
+      213: -8728988513028256887
+    second: armored-npcs_15
+  - first:
+      213: -1847287042390056832
+    second: armored-npcs_16
+  - first:
+      213: -7009026784533962334
+    second: armored-npcs_17
+  - first:
+      213: -3896801989269443191
+    second: armored-npcs_18
+  - first:
+      213: -3932795956813060026
+    second: armored-npcs_19
+  - first:
+      213: -6780939200783265620
+    second: armored-npcs_20
+  - first:
+      213: 1419531826953260956
+    second: armored-npcs_21
+  - first:
+      213: -2721266032682051752
+    second: armored-npcs_22
+  - first:
+      213: -6712654649785902014
+    second: armored-npcs_23
+  - first:
+      213: -5852173202761805893
+    second: armored-npcs_24
+  - first:
+      213: -3493777300123666548
+    second: armored-npcs_25
+  - first:
+      213: -2984524976511036978
+    second: armored-npcs_26
+  - first:
+      213: -6872271998237794077
+    second: armored-npcs_27
+  - first:
+      213: -4781533756687766829
+    second: armored-npcs_28
+  - first:
+      213: -4481000288404893978
+    second: armored-npcs_29
+  - first:
+      213: 372617442185275435
+    second: armored-npcs_30
+  - first:
+      213: 1909500034969910293
+    second: armored-npcs_31
+  - first:
+      213: 2397445126156489373
+    second: armored-npcs_32
+  - first:
+      213: 5440080544615919882
+    second: armored-npcs_33
+  - first:
+      213: 780792530940589303
+    second: armored-npcs_34
+  - first:
+      213: 3616814577198642425
+    second: armored-npcs_35
+  - first:
+      213: -8471822633043086881
+    second: armored-npcs_36
+  - first:
+      213: 2472828423367509802
+    second: armored-npcs_37
+  - first:
+      213: 1417900831747228315
+    second: armored-npcs_38
+  - first:
+      213: 2380059573889112871
+    second: armored-npcs_39
+  - first:
+      213: 2385696627032482231
+    second: armored-npcs_40
+  - first:
+      213: 8345392635362691658
+    second: armored-npcs_41
+  - first:
+      213: -5087890097996991827
+    second: armored-npcs_42
+  - first:
+      213: 4553152023030798471
+    second: armored-npcs_43
+  - first:
+      213: 4931921690348433694
+    second: armored-npcs_44
+  - first:
+      213: 6413983495061609052
+    second: armored-npcs_45
+  - first:
+      213: 6517223466615237990
+    second: armored-npcs_46
+  - first:
+      213: -2480016837227174905
+    second: armored-npcs_47
+  - first:
+      213: -6457966489866764938
+    second: armored-npcs_48
+  - first:
+      213: -4544254794451896295
+    second: armored-npcs_49
+  - first:
+      213: -8295172502200718182
+    second: armored-npcs_50
+  - first:
+      213: 9158140452852357465
+    second: armored-npcs_51
+  - first:
+      213: -632477903720447479
+    second: armored-npcs_52
+  - first:
+      213: 3447832246333197238
+    second: armored-npcs_53
+  - first:
+      213: -2104326296072831223
+    second: armored-npcs_54
+  - first:
+      213: 2444064407965321201
+    second: armored-npcs_55
+  - first:
+      213: -9004564110298124005
+    second: armored-npcs_56
+  - first:
+      213: -6935648929400772310
+    second: armored-npcs_57
+  - first:
+      213: 4135006431005101732
+    second: armored-npcs_58
+  - first:
+      213: -1734011664591300792
+    second: armored-npcs_59
+  - first:
+      213: 1905241607440921302
+    second: armored-npcs_60
+  - first:
+      213: -6559091289424455781
+    second: armored-npcs_61
+  - first:
+      213: -3992533415635892040
+    second: armored-npcs_62
+  - first:
+      213: -3202841753751967392
+    second: armored-npcs_63
+  - first:
+      213: 6535508221986932614
+    second: armored-npcs_64
+  - first:
+      213: -6219706728563984055
+    second: armored-npcs_65
+  - first:
+      213: -6750738606471925307
+    second: armored-npcs_66
+  - first:
+      213: -573590086199626864
+    second: armored-npcs_67
+  - first:
+      213: 8762130136484049572
+    second: armored-npcs_68
+  - first:
+      213: -3695474726594252005
+    second: armored-npcs_69
+  - first:
+      213: -5560861321649760728
+    second: armored-npcs_70
+  - first:
+      213: -3834050347862969210
+    second: armored-npcs_71
+  - first:
+      213: 663288142771826170
+    second: armored-npcs_72
+  - first:
+      213: -4686451765246974745
+    second: armored-npcs_73
+  - first:
+      213: -659603414742234729
+    second: armored-npcs_74
+  - first:
+      213: -3116254954481681944
+    second: armored-npcs_75
+  - first:
+      213: -2997323067511298329
+    second: armored-npcs_76
+  - first:
+      213: -1227848753110877560
+    second: armored-npcs_77
+  - first:
+      213: 5606140324038185250
+    second: armored-npcs_78
+  - first:
+      213: 7379860712548203019
+    second: armored-npcs_79
+  - first:
+      213: 8116782629775352548
+    second: armored-npcs_80
+  - first:
+      213: -2445296456686302268
+    second: armored-npcs_81
+  - first:
+      213: 1668542932299308959
+    second: armored-npcs_82
+  - first:
+      213: 1205738066602190571
+    second: armored-npcs_83
+  - first:
+      213: -657376395564906807
+    second: armored-npcs_84
+  - first:
+      213: -7283224497866579767
+    second: armored-npcs_85
+  - first:
+      213: 6154300781242260371
+    second: armored-npcs_86
+  - first:
+      213: 8613808571414437301
+    second: armored-npcs_87
+  - first:
+      213: 4640379496200830185
+    second: armored-npcs_88
+  - first:
+      213: -7464112854420493173
+    second: armored-npcs_89
+  - first:
+      213: -3634459795638882400
+    second: armored-npcs_90
+  - first:
+      213: 864163350866414864
+    second: armored-npcs_91
+  - first:
+      213: 4429233179495253265
+    second: armored-npcs_92
+  - first:
+      213: 4934215723890708613
+    second: armored-npcs_93
+  - first:
+      213: 2608791865752615337
+    second: armored-npcs_94
+  - first:
+      213: -6001389978400016948
+    second: armored-npcs_95
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: armored-npcs_0
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 504
+        width: 31
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 897cb873b42081c40800000000000000
+      internalID: 5483135068401289112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: armored-npcs_1
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 504
+        width: 31
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa9bed19be4e06820800000000000000
+      internalID: 2909577059697080746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: armored-npcs_2
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 504
+        width: 31
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a55fcdb56648ded90800000000000000
+      internalID: -7066846665111702182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: armored-npcs_3
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 504
+        width: 31
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb7f27c1c40885060800000000000000
+      internalID: 6942439889974785982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: armored-npcs_4
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 504
+        width: 31
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c24ea39f200ad1e0800000000000000
+      internalID: -2172423665911708990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: armored-npcs_5
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 504
+        width: 31
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66153f416f0e30260800000000000000
+      internalID: 7062735988165136742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: armored-npcs_6
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 504
+        width: 31
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 717cffec6f664a9e0800000000000000
+      internalID: -1611049556470937833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: armored-npcs_7
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 504
+        width: 31
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50bf8176a18cbb0a0800000000000000
+      internalID: -6864673191271793915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: armored-npcs_8
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 504
+        width: 31
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5c2a80fdf963fcc0800000000000000
+      internalID: -3678479931248333730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: armored-npcs_9
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 504
+        width: 31
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cbcb98dd67f06f50800000000000000
+      internalID: 6872765082524961732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: armored-npcs_10
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 504
+        width: 31
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af24d0b04b0d31510800000000000000
+      internalID: 1518786971052098298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: armored-npcs_11
+      rect:
+        serializedVersion: 2
+        x: 537
+        y: 504
+        width: 31
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef9cec661462bfd20800000000000000
+      internalID: 3313284013200689662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: armored-npcs_12
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 432
+        width: 30
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b5ee72efc3b7fb90800000000000000
+      internalID: -7208094973143620172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: armored-npcs_13
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 432
+        width: 30
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65f01ba49594ec400800000000000000
+      internalID: 346294869208141654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: armored-npcs_14
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 432
+        width: 30
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52bf11da3b89f6d40800000000000000
+      internalID: 5579846360805538597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: armored-npcs_15
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 432
+        width: 30
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98b4c7012376cd680800000000000000
+      internalID: -8728988513028256887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: armored-npcs_16
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 432
+        width: 30
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 080a828e83e1d56e0800000000000000
+      internalID: -1847287042390056832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: armored-npcs_17
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 432
+        width: 30
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a1a7ae564feabe90800000000000000
+      internalID: -7009026784533962334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: armored-npcs_18
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 432
+        width: 30
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98d2f85ac37cbe9c0800000000000000
+      internalID: -3896801989269443191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: armored-npcs_19
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 432
+        width: 30
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 648a0140ae6eb69c0800000000000000
+      internalID: -3932795956813060026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: armored-npcs_20
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 432
+        width: 30
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca0dacd49b345e1a0800000000000000
+      internalID: -6780939200783265620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: armored-npcs_21
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 432
+        width: 30
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9f09e4fca033b310800000000000000
+      internalID: 1419531826953260956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: armored-npcs_22
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 432
+        width: 30
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85756ae06fe1c3ad0800000000000000
+      internalID: -2721266032682051752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: armored-npcs_23
+      rect:
+        serializedVersion: 2
+        x: 537
+        y: 432
+        width: 30
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24c13a3492cd7d2a0800000000000000
+      internalID: -6712654649785902014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: armored-npcs_24
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 360
+        width: 30
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbf825d6a77e8cea0800000000000000
+      internalID: -5852173202761805893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: armored-npcs_25
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 360
+        width: 30
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c873ecd6e0c938fc0800000000000000
+      internalID: -3493777300123666548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: armored-npcs_26
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 360
+        width: 30
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec157c7b856d496d0800000000000000
+      internalID: -2984524976511036978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: armored-npcs_27
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 360
+        width: 30
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e02c294709c0a0a0800000000000000
+      internalID: -6872271998237794077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: armored-npcs_28
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 360
+        width: 30
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3da2617c16494adb0800000000000000
+      internalID: -4781533756687766829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: armored-npcs_29
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 360
+        width: 30
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ee0433aaf940d1c0800000000000000
+      internalID: -4481000288404893978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: armored-npcs_30
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 360
+        width: 30
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b286196e69dcb2500800000000000000
+      internalID: 372617442185275435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: armored-npcs_31
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 360
+        width: 30
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51c3af23a28ef7a10800000000000000
+      internalID: 1909500034969910293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: armored-npcs_32
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 360
+        width: 30
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d929c09d3af654120800000000000000
+      internalID: 2397445126156489373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: armored-npcs_33
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 360
+        width: 30
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a01785bbe6c0f7b40800000000000000
+      internalID: 5440080544615919882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: armored-npcs_34
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 360
+        width: 30
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f4fdf98baee5da00800000000000000
+      internalID: 780792530940589303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: armored-npcs_35
+      rect:
+        serializedVersion: 2
+        x: 537
+        y: 360
+        width: 30
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f4316cf1b1813230800000000000000
+      internalID: 3616814577198642425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: armored-npcs_36
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 289
+        width: 31
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd13a5d633a0e6a80800000000000000
+      internalID: -8471822633043086881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: armored-npcs_37
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 289
+        width: 31
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a274f457950415220800000000000000
+      internalID: 2472828423367509802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: armored-npcs_38
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 289
+        width: 31
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b92460b4b456da310800000000000000
+      internalID: 1417900831747228315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: armored-npcs_39
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 289
+        width: 31
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72b9de5829ba70120800000000000000
+      internalID: 2380059573889112871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: armored-npcs_40
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 289
+        width: 31
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b16e1c3172bb1120800000000000000
+      internalID: 2385696627032482231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: armored-npcs_41
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 289
+        width: 31
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4a44f5d26ac0d370800000000000000
+      internalID: 8345392635362691658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: armored-npcs_42
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 289
+        width: 31
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da279a4a9ee2469b0800000000000000
+      internalID: -5087890097996991827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: armored-npcs_43
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 289
+        width: 31
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7881a1d24ab003f30800000000000000
+      internalID: 4553152023030798471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: armored-npcs_44
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 289
+        width: 31
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e11334d95a4b17440800000000000000
+      internalID: 4931921690348433694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: armored-npcs_45
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 289
+        width: 31
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5a9d5a810c030950800000000000000
+      internalID: 6413983495061609052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: armored-npcs_46
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 289
+        width: 31
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66de0719634d17a50800000000000000
+      internalID: 6517223466615237990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: armored-npcs_47
+      rect:
+        serializedVersion: 2
+        x: 537
+        y: 289
+        width: 31
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 704261483d5359dd0800000000000000
+      internalID: -2480016837227174905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: armored-npcs_48
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 216
+        width: 31
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67d7d1871b1b066a0800000000000000
+      internalID: -6457966489866764938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: armored-npcs_49
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 216
+        width: 31
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91834d747509fe0c0800000000000000
+      internalID: -4544254794451896295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: armored-npcs_50
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 216
+        width: 31
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9cecb71f80a1ec80800000000000000
+      internalID: -8295172502200718182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: armored-npcs_51
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 216
+        width: 31
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 959566f4830481f70800000000000000
+      internalID: 9158140452852357465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: armored-npcs_52
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 216
+        width: 31
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 902857492bcf837f0800000000000000
+      internalID: -632477903720447479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: armored-npcs_53
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 216
+        width: 31
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bbc3df192929df20800000000000000
+      internalID: 3447832246333197238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: armored-npcs_54
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 216
+        width: 31
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90fb017026eebc2e0800000000000000
+      internalID: -2104326296072831223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: armored-npcs_55
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 216
+        width: 31
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f7c2fc31af0be120800000000000000
+      internalID: 2444064407965321201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: armored-npcs_56
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 216
+        width: 31
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b11f27066ac590380800000000000000
+      internalID: -9004564110298124005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: armored-npcs_57
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 216
+        width: 31
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a29af3c9b00afbf90800000000000000
+      internalID: -6935648929400772310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: armored-npcs_58
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 216
+        width: 31
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4aec308d07e726930800000000000000
+      internalID: 4135006431005101732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: armored-npcs_59
+      rect:
+        serializedVersion: 2
+        x: 537
+        y: 216
+        width: 31
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 847d6a7049d8fe7e0800000000000000
+      internalID: -1734011664591300792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: armored-npcs_60
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 144
+        width: 30
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d27fc6c527c07a10800000000000000
+      internalID: 1905241607440921302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: armored-npcs_61
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 144
+        width: 30
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b971f7c493d69f4a0800000000000000
+      internalID: -6559091289424455781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: armored-npcs_62
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 144
+        width: 30
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b84527030ca798c0800000000000000
+      internalID: -3992533415635892040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: armored-npcs_63
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 144
+        width: 30
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06923d3f4683d83d0800000000000000
+      internalID: -3202841753751967392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: armored-npcs_64
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 144
+        width: 31
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6870d2ee91ac2ba50800000000000000
+      internalID: 6535508221986932614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: armored-npcs_65
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 144
+        width: 32
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94936dc0fa92fa9a0800000000000000
+      internalID: -6219706728563984055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: armored-npcs_66
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 144
+        width: 30
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c1b9bd110f8052a0800000000000000
+      internalID: -6750738606471925307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: armored-npcs_67
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 144
+        width: 30
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 093b2690bd23a08f0800000000000000
+      internalID: -573590086199626864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: armored-npcs_68
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 144
+        width: 30
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a270e47fe6599970800000000000000
+      internalID: 8762130136484049572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: armored-npcs_69
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 144
+        width: 30
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b137aecc05907bcc0800000000000000
+      internalID: -3695474726594252005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: armored-npcs_70
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 144
+        width: 30
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8265bd5371ad3d2b0800000000000000
+      internalID: -5560861321649760728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: armored-npcs_71
+      rect:
+        serializedVersion: 2
+        x: 537
+        y: 144
+        width: 30
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6843aa4b587bacac0800000000000000
+      internalID: -3834050347862969210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: armored-npcs_72
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 72
+        width: 30
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afda4a53d09743900800000000000000
+      internalID: 663288142771826170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: armored-npcs_73
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 72
+        width: 30
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e4a37b03f066feb0800000000000000
+      internalID: -4686451765246974745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: armored-npcs_74
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 72
+        width: 30
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79987a3603e98d6f0800000000000000
+      internalID: -659603414742234729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: armored-npcs_75
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 72
+        width: 32
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e9719821a6d0c4d0800000000000000
+      internalID: -3116254954481681944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: armored-npcs_76
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 72
+        width: 31
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e6a7e3fc8e5766d0800000000000000
+      internalID: -2997323067511298329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: armored-npcs_77
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 72
+        width: 30
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88a7be0801ec5fee0800000000000000
+      internalID: -1227848753110877560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: armored-npcs_78
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 72
+        width: 30
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2211a4f0ce20dcd40800000000000000
+      internalID: 5606140324038185250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: armored-npcs_79
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 72
+        width: 30
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0afb47c7388a6660800000000000000
+      internalID: 7379860712548203019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: armored-npcs_80
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 72
+        width: 30
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e222d61cca94a070800000000000000
+      internalID: 8116782629775352548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: armored-npcs_81
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 72
+        width: 30
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cb01b014df801ed0800000000000000
+      internalID: -2445296456686302268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: armored-npcs_82
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 72
+        width: 30
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9f5034e4fad72710800000000000000
+      internalID: 1668542932299308959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: armored-npcs_83
+      rect:
+        serializedVersion: 2
+        x: 537
+        y: 72
+        width: 30
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be66dff1264abb010800000000000000
+      internalID: 1205738066602190571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: armored-npcs_84
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 1
+        width: 31
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c680a2b6a780e6f0800000000000000
+      internalID: -657376395564906807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: armored-npcs_85
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 1
+        width: 31
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c06d3948e9ccea90800000000000000
+      internalID: -7283224497866579767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: armored-npcs_86
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 1
+        width: 31
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39b9ad224f7786550800000000000000
+      internalID: 6154300781242260371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: armored-npcs_87
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 1
+        width: 31
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bd5f5ef1456a8770800000000000000
+      internalID: 8613808571414437301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: armored-npcs_88
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 1
+        width: 31
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ec7e06e090f56040800000000000000
+      internalID: 4640379496200830185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: armored-npcs_89
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 1
+        width: 31
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8ce6dcc7e42a6890800000000000000
+      internalID: -7464112854420493173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: armored-npcs_90
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 1
+        width: 31
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0af6182721ecf8dc0800000000000000
+      internalID: -3634459795638882400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: armored-npcs_91
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 1
+        width: 31
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01dcd443dff1efb00800000000000000
+      internalID: 864163350866414864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: armored-npcs_92
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 1
+        width: 31
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11540331c1cc77d30800000000000000
+      internalID: 4429233179495253265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: armored-npcs_93
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 1
+        width: 31
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58017abee0bd97440800000000000000
+      internalID: 4934215723890708613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: armored-npcs_94
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 1
+        width: 31
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a9fc13416a443420800000000000000
+      internalID: 2608791865752615337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: armored-npcs_95
+      rect:
+        serializedVersion: 2
+        x: 537
+        y: 1
+        width: 31
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc5b0e28c97c6bca0800000000000000
+      internalID: -6001389978400016948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
