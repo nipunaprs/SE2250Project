@@ -41,7 +41,20 @@ public Vector2 speed = new Vector2(50,50);
 
         healthBar.SetHealth(currentHealth);
     }
-    void onTriggerEnter(Collider other) {
+    void onTriggerEnter2D(Collider other) {
         speed = speed*-1; 
+        TakeDamage(2);
+        
     }
+
+    void OnCollisionEnter2D(Collision2D collision)
+     {
+         print("Hit");
+
+         TakeDamage(2);
+         
+     }
+
+     
+    
 }
