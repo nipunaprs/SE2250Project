@@ -11,7 +11,7 @@ public class MovementNew : MonoBehaviour
     public float speed = 5;
     Animator anim;
     Rigidbody2D rg;
-    
+    private bool attack;
 
     // Start is called before the first frame update
     void Start()
@@ -108,6 +108,7 @@ public class MovementNew : MonoBehaviour
             {
                 anim.SetBool("isrunningright", true);
                 MovePlayer();
+                
             }
             else
             {
@@ -126,11 +127,66 @@ public class MovementNew : MonoBehaviour
 
         }
 
+        if(Input.GetKey(KeyCode.LeftShift))
+        {
+            attack = true;
+            HandleAttack();
+        }
 
+     /*   if (Input.GetKey("z"))
+        {
+            if (Input.GetKey("left"))
+            {
+                anim.SetBool("knifeleft", true);
+            }
+            if (Input.GetKey("right"))
+            {
+                anim.SetTrigger("attackright");
+                //anim.SetBool("kniferight", true);
+            }
+            if (Input.GetKey("up"))
+            {
+                anim.SetBool("knifeup", true);
+            }
+            if (Input.GetKey("down"))
+            {
+                anim.SetBool("knifedown", true);
+            }
 
+        }
+        else
+        {
+            anim.SetTrigger("attackright");
+            anim.SetBool("knifeleft", false);
+            anim.SetBool("kniferight", false);
+            anim.SetBool("knifeup", false);
+            anim.SetBool("knifedown", false);
+        }*/
 
 
 
 
     }
+
+    private void FixedUpdate()
+    {
+        HandleAttack();
+        ResetValues();
+    }
+
+
+    void HandleAttack()
+    {
+        if(attack)
+        {
+            anim.SetTrigger("attackright");
+        }
+    }
+
+    void ResetValues()
+    {
+        attack = false;
+    }
+
+
 }
