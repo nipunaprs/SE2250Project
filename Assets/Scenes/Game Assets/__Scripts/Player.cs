@@ -41,7 +41,27 @@ public Vector2 speed = new Vector2(50,50);
 
         healthBar.SetHealth(currentHealth);
     }
-    void onTriggerEnter(Collider other) {
-        speed = speed*-1; 
-    }
+    // void onTriggerEnter(Collider other) {
+    //     speed = speed*-1; 
+
+    //     print("Collid");
+    //     //we get the root of the other gameobject
+    //     Transform rootT = other.gameObject.transform.root;
+
+    //     //We then get reference to the colliding object
+    //     GameObject go = rootT.gameObject; 
+
+    //     //We destroy this gameobject
+    //     Destroy(go);
+
+    //     //We also destroy the hero object
+    //     Destroy(gameObject); 
+    // }
+
+    void OnCollisionEnter2D(Collision2D collision)
+     {
+         print("Hit");
+         
+     }
+    
 }
