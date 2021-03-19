@@ -6,29 +6,42 @@ public class Player : MonoBehaviour
 {
     // Start is called before the first frame update
 public Vector2 speed = new Vector2(50,50);
-    public Animator anim;
-    public KeyCode RightKey;
+
+    public int maxHealth = 20; //Set player max value
+    public int currentHealth = 20; //tracks current health
+
+    public HealthBar healthBar; //Gets healthbar
 
 
     void Start()
     {
-        anim = gameObject.GetComponent<Animator>();
+        currentHealth = maxHealth;//set current health to max at start of game
+
+        //Set the slider health to max
+        healthBar.SetMaxHealth(maxHealth);
     }
+
     // Update is called once per frame
     void Update() {
 
-    float inputX = Input.GetAxis ("Horizontal"); 
-    float inputY = Input.GetAxis("Vertical"); 
+        //Remove a point of damage
+        if (Input.GetKeyDown("space")){
+            TakeDamage(1);
+            
+        }
 
-    Vector3 movement = new Vector3 (speed.x*inputX, speed.y*inputY, 0);
+        print("works" + currentHealth);
 
-    movement *= Time.deltaTime;
+    }
 
-        if (Input.GetKeyDown(KeyCode.RightArrow))
-            anim.Play("");
+    //example take damage
+    void TakeDamage(int damage)
+    {
+        currentHealth = currentHealth - damage;
 
-
-    transform.Translate(movement);
-    
+        healthBar.SetHealth(currentHealth);
+    }
+    void onTriggerEnter(Collider other) {
+        speed = speed*-1; 
     }
 }
