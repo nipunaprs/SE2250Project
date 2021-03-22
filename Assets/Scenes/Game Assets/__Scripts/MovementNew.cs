@@ -11,13 +11,28 @@ public class MovementNew : MonoBehaviour
     public float speed = 5;
     Animator anim;
     Rigidbody2D rg;
-    private bool attack;
+    private bool _attack;
 
     // Start is called before the first frame update
     void Start()
     {
         anim = GetComponent<Animator>();
         rg = GetComponent<Rigidbody2D>();
+    }
+
+    public bool Attacking {
+
+        get
+        {
+            //Some other code
+            print(_attack);
+            return _attack;
+        }
+        set
+        {
+            //Some other code
+            _attack = value;
+        }
     }
 
     void MovePlayer()
@@ -129,8 +144,10 @@ public class MovementNew : MonoBehaviour
 
         if(Input.GetKey(KeyCode.LeftShift))
         {
-            attack = true;
+            _attack = true;
+            OnValidate();
             HandleAttack();
+            
         }
 
      /*   if (Input.GetKey("z"))
@@ -172,20 +189,26 @@ public class MovementNew : MonoBehaviour
     {
         HandleAttack();
         ResetValues();
+        
+    }
+
+    void OnValidate() {
+        print(_attack + "validae");
+        Attacking = _attack;
+        
     }
 
 
     void HandleAttack()
     {
-        if(attack)
+        if(_attack)
         {
             anim.SetTrigger("attackright");
         }
     }
-
-    void ResetValues()
+    public void ResetValues()
     {
-        attack = false;
+        _attack = false;
     }
 
 

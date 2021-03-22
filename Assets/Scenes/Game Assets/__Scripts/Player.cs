@@ -5,8 +5,7 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     // Start is called before the first frame update
-public Vector2 speed = new Vector2(50,50);
-
+    public Vector2 speed = new Vector2(50,50);
     public int maxHealth = 20; //Set player max value
     public int currentHealth = 20; //tracks current health
 
@@ -23,14 +22,6 @@ public Vector2 speed = new Vector2(50,50);
 
     // Update is called once per frame
     void Update() {
-
-        //Remove a point of damage
-        if (Input.GetKeyDown("space")){
-            TakeDamage(1);
-            
-        }
-
-        print("works" + currentHealth);
 
     }
 
@@ -52,8 +43,10 @@ public Vector2 speed = new Vector2(50,50);
          print("Hit");
 
          TakeDamage(2);
+         speed = speed*-1; 
          
      }
+
 
      
     
