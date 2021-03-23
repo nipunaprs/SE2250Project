@@ -33,19 +33,6 @@ public class PlayerV2 : MonoBehaviour
     private void Update()
     {
         HandleInput();
-
-        if (Input.GetKey("3")) {
-            Vector3 mousePosition = Input.mousePosition;
-            mousePosition.z = mainCam.nearClipPlane;
-            mousePos = mainCam.ScreenToWorldPoint(mousePosition);
-            print(mousePos);
-            float x = mousePos.x - mainCam.transform.position.x;
-            float y = mousePos.y - mainCam.transform.position.y;
-            
-            GameObject.FindGameObjectWithTag("PC").GetComponent<Transform>().position = new Vector2(x,y);
-
-            //Teleport();
-        }
     }
 
     void FixedUpdate()
@@ -103,6 +90,9 @@ public class PlayerV2 : MonoBehaviour
             if (facingLeft) attackLeft = true;
             if (facingUp) attackUp = true;
             
+        }
+        if (Input.GetKey("3")) {
+            HandleTeleport();
         }
     }
 
@@ -234,12 +224,22 @@ public class PlayerV2 : MonoBehaviour
 
     }
 
-    void Teleport() {
+    //Teleports player
+    private void HandleTeleport() {
 
+        //Getting mouse position
+        Vector3 mousePosition = Input.mousePosition;
+        mousePosition.z = mainCam.nearClipPlane;
 
-        Transform transform = GameObject.FindGameObjectWithTag("PC").GetComponent<Transform>();
+        //Fixing the location of the mouse position
+        mousePos = mainCam.ScreenToWorldPoint(mousePosition);
+       
+       //Fixing the mouse position by removing the camera additions to the value
+        float x = mousePos.x - mainCam.transform.position.x;
+        float y = mousePos.y - mainCam.transform.position.y;
         
-        transform.position = new Vector2(mousePos.x,mousePos.y);
+        //Set the player location
+        GameObject.FindGameObjectWithTag("PC").GetComponent<Transform>().position = new Vector2(x,y);
     }
 
     
