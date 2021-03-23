@@ -1911,6 +1911,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementSpeed: 5
+  knifePrefab: {fileID: 1354001833492059366, guid: de9b679474c5f9e418432a010d672283,
+    type: 3}
   mainCam: {fileID: 944993691}
 --- !u!61 &799808694
 BoxCollider2D:

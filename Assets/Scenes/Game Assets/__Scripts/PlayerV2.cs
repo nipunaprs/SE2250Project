@@ -20,6 +20,10 @@ public class PlayerV2 : MonoBehaviour
     private bool attackUp;
     private bool attackLeft;
 
+
+    private bool throwKnife;
+    public GameObject knifePrefab;
+
     public Camera mainCam;
     Vector3 mousePos;
     // Start is called before the first frame update
@@ -94,6 +98,18 @@ public class PlayerV2 : MonoBehaviour
         if (Input.GetKey("3")) {
             HandleTeleport();
         }
+
+        //Throw knife when press V
+        if(Input.GetKeyDown(KeyCode.Z))
+        {
+            //Play same knife attack animation
+            if (facingDown) attackDown = true;
+            if (facingRight) attackRight = true;
+            if (facingLeft) attackLeft = true;
+            if (facingUp) attackUp = true;
+            throwKnife = true;
+            ThrowKnife(0);
+        }
     }
 
     //Resets all attack values every FixedUpdate at the end
@@ -103,8 +119,45 @@ public class PlayerV2 : MonoBehaviour
         attackDown = false;
         attackUp = false;
         attackLeft = false;
+        throwKnife = false;
+        
     }
 
+    
+
+    public void ThrowKnife(int value)
+    {
+        //If facingright and after any Attack animation is done, then allow to throw another knife
+        if(facingRight && !this.myanim.GetCurrentAnimatorStateInfo(0).IsTag("Attack"))
+        {
+            //Create a knife, set it to temp gameobject
+            GameObject tmp = (GameObject) Instantiate(knifePrefab, transform.position, Quaternion.Euler(new Vector3(0,0, 180)));
+            //Pass the correct direction to send the knife
+            tmp.GetComponent<Knife>().Initialize(Vector2.right);
+        }
+        else if (facingLeft && !this.myanim.GetCurrentAnimatorStateInfo(0).IsTag("Attack")) 
+        {
+            //Create a knife, set it to temp gameobject
+            GameObject tmp = (GameObject) Instantiate(knifePrefab, transform.position, Quaternion.Euler(new Vector3(0, 0, 0)));
+            //Pass the correct direction to send the knife
+            tmp.GetComponent<Knife>().Initialize(Vector2.left);
+        }
+        else if (facingUp && !this.myanim.GetCurrentAnimatorStateInfo(0).IsTag("Attack"))
+        {
+            //Create a knife, set it to temp gameobject
+            GameObject tmp = (GameObject) Instantiate(knifePrefab, transform.position, Quaternion.Euler(new Vector3(0, 0, -90)));
+            //Pass the correct direction to send the knife
+            tmp.GetComponent<Knife>().Initialize(Vector2.up);
+        }
+        else if (facingDown && !this.myanim.GetCurrentAnimatorStateInfo(0).IsTag("Attack"))
+        {
+            //Create a knife, set it to temp gameobject
+            GameObject tmp = (GameObject) Instantiate(knifePrefab, transform.position, Quaternion.Euler(new Vector3(0, 0, 90)));
+            //Pass the correct direction to send the knife
+            tmp.GetComponent<Knife>().Initialize(Vector2.down);
+        }
+
+    }
 
     private void HandleAttacks()
     {
@@ -115,6 +168,8 @@ public class PlayerV2 : MonoBehaviour
             myanim.SetTrigger("attackright");
             //When attacking set velocity to zero
             myrigidbody.velocity = Vector2.zero;
+
+
         }
 
         //If attackLeft is true and we're not already attacking
@@ -225,7 +280,8 @@ public class PlayerV2 : MonoBehaviour
     }
 
     //Teleports player
-    private void HandleTeleport() {
+    private void HandleTeleport()
+    {
 
         //Getting mouse position
         Vector3 mousePosition = Input.mousePosition;
@@ -233,16 +289,16 @@ public class PlayerV2 : MonoBehaviour
 
         //Fixing the location of the mouse position
         mousePos = mainCam.ScreenToWorldPoint(mousePosition);
-       
-       //Fixing the mouse position by removing the camera additions to the value
+
+        //Fixing the mouse position by removing the camera additions to the value
         float x = mousePos.x - mainCam.transform.position.x;
         float y = mousePos.y - mainCam.transform.position.y;
-        
+
         //Set the player location
-        GameObject.FindGameObjectWithTag("PC").GetComponent<Transform>().position = new Vector2(x,y);
+        GameObject.FindGameObjectWithTag("PC").GetComponent<Transform>().position = new Vector2(x, y);
     }
 
-    
+
 
 
 
