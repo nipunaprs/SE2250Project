@@ -20,6 +20,8 @@ public class PlayerV2 : MonoBehaviour
     private bool attackUp;
     private bool attackLeft;
 
+    public Camera mainCam;
+    Vector3 mousePos;
     // Start is called before the first frame update
     void Start()
     {
@@ -31,6 +33,19 @@ public class PlayerV2 : MonoBehaviour
     private void Update()
     {
         HandleInput();
+
+        if (Input.GetKey("3")) {
+            Vector3 mousePosition = Input.mousePosition;
+            mousePosition.z = mainCam.nearClipPlane;
+            mousePos = mainCam.ScreenToWorldPoint(mousePosition);
+            print(mousePos);
+            float x = mousePos.x - mainCam.transform.position.x;
+            float y = mousePos.y - mainCam.transform.position.y;
+            
+            GameObject.FindGameObjectWithTag("PC").GetComponent<Transform>().position = new Vector2(x,y);
+
+            //Teleport();
+        }
     }
 
     void FixedUpdate()
@@ -217,6 +232,14 @@ public class PlayerV2 : MonoBehaviour
             facingLeft = false;
         }
 
+    }
+
+    void Teleport() {
+
+
+        Transform transform = GameObject.FindGameObjectWithTag("PC").GetComponent<Transform>();
+        
+        transform.position = new Vector2(mousePos.x,mousePos.y);
     }
 
     

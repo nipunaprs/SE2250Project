@@ -1911,6 +1911,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementSpeed: 5
+  mainCam: {fileID: 944993691}
 --- !u!61 &799808694
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1989,7 +1990,7 @@ PrefabInstance:
     - target: {fileID: 2254541382808999761, guid: afd09cacfaaaf8e4f983241787aa6ad2,
         type: 3}
       propertyPath: m_TagString
-      value: PC
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 2254541382808999764, guid: afd09cacfaaaf8e4f983241787aa6ad2,
         type: 3}
