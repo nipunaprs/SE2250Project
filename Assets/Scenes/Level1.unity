@@ -1803,9 +1803,10 @@ GameObject:
   - component: {fileID: 799808694}
   - component: {fileID: 799808693}
   - component: {fileID: 799808695}
+  - component: {fileID: 799808696}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: PC
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1955,6 +1956,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &799808696
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 799808689}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa0c5774dd1fa8648a63b14b37d36a79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  iStrigger: 0
 --- !u!1001 &857784695
 PrefabInstance:
   m_ObjectHideFlags: 0
