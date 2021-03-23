@@ -15,6 +15,11 @@ public class PlayerV2 : MonoBehaviour
     private bool facingLeft = false;
     private bool facingDown = true;
 
+    private bool attackRight;
+    private bool attackDown;
+    private bool attackUp;
+    private bool attackLeft;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -23,7 +28,11 @@ public class PlayerV2 : MonoBehaviour
 
     }
 
-    
+    private void Update()
+    {
+        HandleInput();
+    }
+
     void FixedUpdate()
     {
         float horizontal = Input.GetAxis("Horizontal");
@@ -32,12 +41,20 @@ public class PlayerV2 : MonoBehaviour
         HandleMovement(horizontal,vertical);
         Flip(horizontal, vertical);
         HandleWalk();
+        HandleAttacks();
+        ResetValues();
     }
 
     //Method to handle movement of player using velocity
     private void HandleMovement(float horizontal,float vertical)
     {
-        myrigidbody.velocity = new Vector2(horizontal * movementSpeed, vertical * movementSpeed);
+        //Only allow movement if any Attack tag animation isn't playing
+        if(!this.myanim.GetCurrentAnimatorStateInfo(0).IsTag("Attack"))
+        {
+            myrigidbody.velocity = new Vector2(horizontal * movementSpeed, vertical * movementSpeed);
+        }
+
+        
 
     }
 
@@ -60,6 +77,67 @@ public class PlayerV2 : MonoBehaviour
         if (facingDown == true) myanim.SetBool("walkdown", true);
         else myanim.SetBool("walkdown", false);
 
+    }
+
+    private void HandleInput()
+    {
+        if(Input.GetKeyDown(KeyCode.LeftShift))
+        {
+            if (facingDown) attackDown = true;
+            if (facingRight) attackRight = true;
+            if (facingLeft) attackLeft = true;
+            if (facingUp) attackUp = true;
+            
+        }
+    }
+
+    //Resets all attack values every FixedUpdate at the end
+    private void ResetValues()
+    {
+        attackRight = false;
+        attackDown = false;
+        attackUp = false;
+        attackLeft = false;
+    }
+
+
+    private void HandleAttacks()
+    {
+        //If attackRight is true and we're not already attacking
+        if(attackRight && !this.myanim.GetCurrentAnimatorStateInfo(0).IsTag("Attack"))
+        {
+            //Call attack
+            myanim.SetTrigger("attackright");
+            //When attacking set velocity to zero
+            myrigidbody.velocity = Vector2.zero;
+        }
+
+        //If attackLeft is true and we're not already attacking
+        if (attackLeft && !this.myanim.GetCurrentAnimatorStateInfo(0).IsTag("Attack"))
+        {
+            //Call attack
+            myanim.SetTrigger("attackleft");
+            //When attacking set velocity to zero
+            myrigidbody.velocity = Vector2.zero;
+        }
+
+        //If attackUp is true and we're not already attacking
+        if (attackUp && !this.myanim.GetCurrentAnimatorStateInfo(0).IsTag("Attack"))
+        {
+            //Call attack
+            myanim.SetTrigger("attackup");
+            //When attacking set velocity to zero
+            myrigidbody.velocity = Vector2.zero;
+        }
+
+        //If attackDown is true and we're not already attacking
+        if (attackDown && !this.myanim.GetCurrentAnimatorStateInfo(0).IsTag("Attack"))
+        {
+            //Call attack
+            myanim.SetTrigger("attackdown");
+            //When attacking set velocity to zero
+            myrigidbody.velocity = Vector2.zero;
+        }
     }
 
     //Method to flip the facing direction (up,down,left,right) boolean values
