@@ -20,8 +20,7 @@ public class Enemy : MonoBehaviour
         if ( anim.GetCurrentAnimatorStateInfo(0).IsName("attackright") &&(go.tag=="PC"))
         {
             
-            health = health - 3;
-            print(health);
+           TakeDamage(3);
         }
          
      }
@@ -32,6 +31,13 @@ public class Enemy : MonoBehaviour
              Destroy(spider);
          }
         
+     }
+
+     void TakeDamage(int damage) {
+
+         
+        health = health - damage;
+         
      }
 
      
