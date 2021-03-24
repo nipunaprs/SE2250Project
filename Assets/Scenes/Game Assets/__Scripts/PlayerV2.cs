@@ -6,13 +6,18 @@ using UnityEngine.UI;
 public class PlayerV2 : MonoBehaviour
 {
 
+    //Connects to player rigidbody and animator
     private Rigidbody2D myrigidbody;
     private Animator myanim;
+
+    //Variables to point to the UI images
     public Image teleImage;
     public Image invImage;
     
+    //Helps track movement speed
     public float movementSpeed;
 
+    //Stores various states of the player
     private bool facingUp = false;
     private bool facingRight = false;
     private bool facingLeft = false;
@@ -31,7 +36,6 @@ public class PlayerV2 : MonoBehaviour
     private bool throwKnife;
     public GameObject knifePrefab;
 
-    public Camera mainCam;
     public int maxHealth = 150; //Set player max value
     public int currentHealth = 150; //tracks current health
 
@@ -45,13 +49,20 @@ public class PlayerV2 : MonoBehaviour
     void Start()
     {
         
-        
         myrigidbody = GetComponent<Rigidbody2D>();
         myanim = GetComponent<Animator>();
+
+        //Ensures currenthealth is at max health
         currentHealth = maxHealth;
+
+        //Sets healthbar
         healthBar.SetMaxHealth(maxHealth);
+
+        //Ensures player spawns with ability to teleport
         canTeleport = true;
         canInvincible = true;
+
+        //Set the invtime to 5
         invTime = timestore;
 
     }
@@ -458,22 +469,23 @@ public class PlayerV2 : MonoBehaviour
         
     }
 
+    //This handles the collision action
     void OnCollisionEnter2D(Collision2D collision)
      {
+         //Player takes damage if they touch enemy
          if( collision.gameObject.tag.Equals("Enemy") == true ) {
-             print("Hit");
 
             TakeDamage(2);
 
          } 
 
-
     }
 
+    //If player gets hit with a projectile they take damage
     void OnTriggerEnter2D(Collider2D col)
     {
 
-
+        //Checks to see if the tag is projectile
         if (col.tag == "projectile") {
             TakeDamage(1);
         }
