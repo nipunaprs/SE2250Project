@@ -44138,6 +44138,12 @@ PrefabInstance:
       propertyPath: spider
       value: 
       objectReference: {fileID: 1029844800}
+    - target: {fileID: -5082647867107538632, guid: b38a8178338144147b796b18cedd7f38,
+        type: 3}
+      propertyPath: projectile
+      value: 
+      objectReference: {fileID: 4244820829810183099, guid: 35357f0066917ae44a056760c4b928b0,
+        type: 3}
     - target: {fileID: 1510912698740378177, guid: b38a8178338144147b796b18cedd7f38,
         type: 3}
       propertyPath: m_Name

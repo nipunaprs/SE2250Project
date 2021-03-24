@@ -32,8 +32,8 @@ public class PlayerV2 : MonoBehaviour
     public GameObject knifePrefab;
 
     public Camera mainCam;
-    public int maxHealth = 20; //Set player max value
-    public int currentHealth = 20; //tracks current health
+    public int maxHealth = 150; //Set player max value
+    public int currentHealth = 150; //tracks current health
 
     public HealthBar healthBar; //Gets healthbar
 
@@ -451,8 +451,34 @@ public class PlayerV2 : MonoBehaviour
 
             //Update health
             healthBar.SetHealth(currentHealth);
+            if(currentHealth<=0) {
+                Destroy(gameObject); 
+            }
         }
         
+    }
+
+    void OnCollisionEnter2D(Collision2D collision)
+     {
+         if( collision.gameObject.tag.Equals("Enemy") == true ) {
+             print("Hit");
+
+            TakeDamage(2);
+
+         } 
+
+
+    }
+
+    void OnTriggerEnter2D(Collider2D col)
+    {
+
+
+        if (col.tag == "projectile") {
+            TakeDamage(1);
+        }
+
+
     }
 
 
