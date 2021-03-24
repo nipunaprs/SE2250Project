@@ -9,6 +9,7 @@ TagManager:
   - PC
   - Knife
   - Enemy
+  - projectile
   layers:
   - Default
   - TransparentFX

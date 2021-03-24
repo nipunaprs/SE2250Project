@@ -1910,6 +1910,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29d8e3f138b70b0498d5a629b643b523, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 0}
   movementSpeed: 5
   knifePrefab: {fileID: 1354001833492059366, guid: de9b679474c5f9e418432a010d672283,
     type: 3}
@@ -2098,7 +2099,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spider: {fileID: 0}
   health: 16
+  stoppingDistance: 0
+  retreatDistance: 0
   speed: 0
+  startTimeBtwShots: 0
+  projectile: {fileID: 4244820829810183099, guid: 35357f0066917ae44a056760c4b928b0,
+    type: 3}
 --- !u!114 &1161823323 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2317791826170424484, guid: f1fb82917918dfd4ba0cde9340438492,
@@ -44127,6 +44133,27 @@ PrefabInstance:
       propertyPath: spider
       value: 
       objectReference: {fileID: 1029844800}
+    - target: {fileID: -5082647867107538632, guid: b38a8178338144147b796b18cedd7f38,
+        type: 3}
+      propertyPath: projectile
+      value: 
+      objectReference: {fileID: 4244820829810183099, guid: 35357f0066917ae44a056760c4b928b0,
+        type: 3}
+    - target: {fileID: -5082647867107538632, guid: b38a8178338144147b796b18cedd7f38,
+        type: 3}
+      propertyPath: retreatDistance
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -5082647867107538632, guid: b38a8178338144147b796b18cedd7f38,
+        type: 3}
+      propertyPath: stoppingDistance
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: -5082647867107538632, guid: b38a8178338144147b796b18cedd7f38,
+        type: 3}
+      propertyPath: startTimeBtwShots
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1510912698740378177, guid: b38a8178338144147b796b18cedd7f38,
         type: 3}
       propertyPath: m_Name

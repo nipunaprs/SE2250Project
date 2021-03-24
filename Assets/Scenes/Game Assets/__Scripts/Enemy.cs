@@ -7,6 +7,8 @@ public class Enemy : MonoBehaviour
     public GameObject spider;
     public int health = 16;
 
+    
+
     void OnCollisionEnter2D(Collision2D collision)
      {
        

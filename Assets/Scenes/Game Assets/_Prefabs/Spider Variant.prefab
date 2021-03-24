@@ -14,6 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spider: {fileID: 0}
   health: 16
+  stoppingDistance: 3
+  retreatDistance: 2
+  speed: 2
+  startTimeBtwShots: 0
+  projectile: {fileID: 0}
 --- !u!1001 &163864337646893383
 PrefabInstance:
   m_ObjectHideFlags: 0
