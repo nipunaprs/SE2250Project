@@ -8,8 +8,7 @@ TagManager:
   - Border
   - PC
   - Knife
-  - Enemy
-  - projectile
+  - PowerThree
   layers:
   - Default
   - TransparentFX

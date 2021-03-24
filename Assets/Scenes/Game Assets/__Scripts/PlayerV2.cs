@@ -1,14 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerV2 : MonoBehaviour
 {
 
-    public GameObject player;
     private Rigidbody2D myrigidbody;
     private Animator myanim;
-
+    public Image teleImage;
+    public Image invImage;
+    
     public float movementSpeed;
 
     private bool facingUp = false;
@@ -22,6 +24,9 @@ public class PlayerV2 : MonoBehaviour
     private bool attackLeft;
 
     private bool canTeleport;
+    private bool canInvincible;
+
+    private bool isInvincible;
 
     private bool throwKnife;
     public GameObject knifePrefab;
@@ -33,15 +38,21 @@ public class PlayerV2 : MonoBehaviour
     public HealthBar healthBar; //Gets healthbar
 
     //Time variable
-    private float timestore = 5f, time;
+    private float timestore = 5f, teleTime,invTime,powerTime;
+
 
     // Start is called before the first frame update
     void Start()
     {
+        
+        
         myrigidbody = GetComponent<Rigidbody2D>();
         myanim = GetComponent<Animator>();
         currentHealth = maxHealth;
         healthBar.SetMaxHealth(maxHealth);
+        canTeleport = true;
+        canInvincible = true;
+        invTime = timestore;
 
     }
 
@@ -52,7 +63,14 @@ public class PlayerV2 : MonoBehaviour
         //If canTeleport is false, then start the timer
         if(canTeleport == false)
         {
-            HandleTime();
+            HandleTeleTime();
+            
+        }
+
+        //If canTeleport is false, then start the timer
+        if(canInvincible == false)
+        {
+            HandleInvTime();
         }
         
 
@@ -70,20 +88,88 @@ public class PlayerV2 : MonoBehaviour
         ResetValues();
     }
 
-    private void HandleTime()
+
+    //Handles the invisibility time duration and cool down
+    private void HandleInvTime()
+    {
+        
+        //This condition occurs if the player is currently invincible
+        if (isInvincible) {
+            //Decrement the power duration time
+            powerTime -= Time.deltaTime;
+            
+            //If the invincible duratino runs outs the player no longer is invincible
+            if (powerTime < 0) {
+                isInvincible=false;
+            }
+        }
+        else {
+            
+            //If time is greater than 0, then start reducing time on the cooldown
+            if (invTime > 0)
+            {
+                //Take off a second, every update;
+                invTime -= Time.deltaTime;
+
+                //We set the UI image so it indicates to the player that their powerup is currently coolign down
+                Color c = invImage.color;
+
+                if (invTime <= 5 && invTime > 3) {
+                    
+                    c.a = 0.0f;
+                }
+                if (invTime <= 3 && invTime > 1) {
+                    
+                    c.a = 0.5f;
+                }
+                if (invTime <= 1 && invTime > 0) {
+                    
+                    c.a = 1.0f;
+                }
+                
+                invImage.color = c;
+                
+            }
+            else
+            {
+               //After cool down set the capability of becoming invinsible to true
+                canInvincible = true;
+                invTime = timestore; 
+            }
+        }
+        
+    }
+
+    private void HandleTeleTime()
     {
         //If time is greater than 0, then start reducing time
-        if (time > 0)
+        if (teleTime > 0)
         {
             //Take off a second, every update;
-            time -= Time.deltaTime;
+            teleTime -= Time.deltaTime;
+            Color c = teleImage.color;
+
+            if (teleTime <= 5 && teleTime > 3) {
+                
+                c.a = 0.0f;
+            }
+            if (teleTime <= 3 && teleTime > 1) {
+                
+                c.a = 0.5f;
+            }
+            if (teleTime <= 1 && teleTime > 0) {
+                
+                c.a = 1.0f;
+            }
+            
+            teleImage.color = c;
             
         }
         else
         {
             //After reaching end of timer, set canTeleport to true
             canTeleport = true;
-            time = timestore; 
+            teleTime = timestore; 
         }
     }
 
@@ -130,13 +216,25 @@ public class PlayerV2 : MonoBehaviour
             if (facingUp) attackUp = true;
             
         }
-        if (Input.GetKey("3")) {
+        if (Input.GetKey("1")) {
 
             //Only if canTeleport is true, allow teleportation
             if (canTeleport)
             {
                 HandleTeleport();
                 canTeleport = false;
+            }
+        }
+        if (Input.GetKey("2")) {
+
+            //Only if canInvisble is true, allow invincibility
+            if (canInvincible)
+            {
+                
+                //Player becomes invincible, reset the powerup duration, and don't allow the player to use the powerup currently
+                isInvincible = true;
+                powerTime = 5.0f;
+                canInvincible = false;
             }
         }
 
@@ -324,7 +422,7 @@ public class PlayerV2 : MonoBehaviour
     private void HandleTeleport()
     {
 
-
+        //Depending on the direction the player faces they will be teleported in that direction a number of units
         if (facingRight)
         {
             GameObject.FindGameObjectWithTag("PC").GetComponent<Transform>().position = new Vector2(GameObject.FindGameObjectWithTag("PC").GetComponent<Transform>().position.x + 4, GameObject.FindGameObjectWithTag("PC").GetComponent<Transform>().position.y);
@@ -343,29 +441,19 @@ public class PlayerV2 : MonoBehaviour
         }
 
 
-
-
     }
 
-    void TakeDamage(int damage)
+    private void TakeDamage(int damage)
     {
-        currentHealth = currentHealth - damage;
+        if (!isInvincible) {
+            //Remove health
+            currentHealth = currentHealth - damage;
 
-        healthBar.SetHealth(currentHealth);
+            //Update health
+            healthBar.SetHealth(currentHealth);
+        }
+        
     }
-
-    void OnCollisionEnter2D(Collision2D collision)
-     {
-         if( collision.gameObject.tag.Equals("Enemy") == true ) {
-             print("Hit");
-
-            TakeDamage(2);
-
-         }
-         
-     }
-
-
 
 
 
