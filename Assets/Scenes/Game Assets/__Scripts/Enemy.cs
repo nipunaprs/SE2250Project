@@ -37,6 +37,12 @@ public class Enemy : MonoBehaviour
             
            TakeDamage(3);
         }
+
+        if ((go.tag=="Knife"))
+        {
+            
+           TakeDamage(5);
+        }
          
      }
 
