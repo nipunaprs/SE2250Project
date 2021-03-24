@@ -216,7 +216,7 @@ public class PlayerV2 : MonoBehaviour
             if (facingUp) attackUp = true;
             
         }
-        if (Input.GetKey("3")) {
+        if (Input.GetKey("1")) {
 
             //Only if canTeleport is true, allow teleportation
             if (canTeleport)
@@ -225,9 +225,9 @@ public class PlayerV2 : MonoBehaviour
                 canTeleport = false;
             }
         }
-        if (Input.GetKey("1")) {
+        if (Input.GetKey("2")) {
 
-            //Only if canInvisble is true, allow invisibility
+            //Only if canInvisble is true, allow invincibility
             if (canInvincible)
             {
                 
@@ -455,10 +455,6 @@ public class PlayerV2 : MonoBehaviour
         
     }
 
-    void OnCollisionEnter2D(Collision2D collision)
-     {
-         TakeDamage(2);
-     }
 
 
 }
