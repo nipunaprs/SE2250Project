@@ -346,16 +346,19 @@ public class PlayerV2 : MonoBehaviour
 
     }
 
-    void TakeDamage(int damage)
+    private void TakeDamage(int damage)
     {
+        //Remove health
         currentHealth = currentHealth - damage;
 
+        //Update health
         healthBar.SetHealth(currentHealth);
     }
 
+    //tester
     void OnCollisionEnter2D(Collision2D collision)
      {
-         print("Hit");
+        
 
          TakeDamage(2);
          
