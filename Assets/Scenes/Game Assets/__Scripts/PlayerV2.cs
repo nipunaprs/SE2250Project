@@ -88,24 +88,30 @@ public class PlayerV2 : MonoBehaviour
         ResetValues();
     }
 
+
+    //Handles the invisibility time duration and cool down
     private void HandleInvTime()
     {
         
+        //This condition occurs if the player is currently invincible
         if (isInvincible) {
+            //Decrement the power duration time
             powerTime -= Time.deltaTime;
-            print(powerTime);
+            
+            //If the invincible duratino runs outs the player no longer is invincible
             if (powerTime < 0) {
                 isInvincible=false;
             }
         }
         else {
-
             
-            //If time is greater than 0, then start reducing time
+            //If time is greater than 0, then start reducing time on the cooldown
             if (invTime > 0)
             {
                 //Take off a second, every update;
                 invTime -= Time.deltaTime;
+
+                //We set the UI image so it indicates to the player that their powerup is currently coolign down
                 Color c = invImage.color;
 
                 if (invTime <= 5 && invTime > 3) {
@@ -126,7 +132,7 @@ public class PlayerV2 : MonoBehaviour
             }
             else
             {
-                //After reaching end of timer, set canTeleport to true
+               //After cool down set the capability of becoming invinsible to true
                 canInvincible = true;
                 invTime = timestore; 
             }
@@ -221,10 +227,11 @@ public class PlayerV2 : MonoBehaviour
         }
         if (Input.GetKey("1")) {
 
-            //Only if canTeleport is true, allow teleportation
+            //Only if canInvisble is true, allow invisibility
             if (canInvincible)
             {
                 
+                //Player becomes invincible, reset the powerup duration, and don't allow the player to use the powerup currently
                 isInvincible = true;
                 powerTime = 5.0f;
                 canInvincible = false;
@@ -415,7 +422,7 @@ public class PlayerV2 : MonoBehaviour
     private void HandleTeleport()
     {
 
-
+        //Depending on the direction the player faces they will be teleported in that direction a number of units
         if (facingRight)
         {
             GameObject.FindGameObjectWithTag("PC").GetComponent<Transform>().position = new Vector2(GameObject.FindGameObjectWithTag("PC").GetComponent<Transform>().position.x + 4, GameObject.FindGameObjectWithTag("PC").GetComponent<Transform>().position.y);
@@ -432,8 +439,6 @@ public class PlayerV2 : MonoBehaviour
         {
             GameObject.FindGameObjectWithTag("PC").GetComponent<Transform>().position = new Vector2(GameObject.FindGameObjectWithTag("PC").GetComponent<Transform>().position.x - 4, GameObject.FindGameObjectWithTag("PC").GetComponent<Transform>().position.y);
         }
-
-
 
 
     }
