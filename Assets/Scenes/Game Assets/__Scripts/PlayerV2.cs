@@ -20,12 +20,17 @@ public class PlayerV2 : MonoBehaviour
     private bool attackUp;
     private bool attackLeft;
 
+    private bool canTeleport;
 
     private bool throwKnife;
     public GameObject knifePrefab;
 
     public Camera mainCam;
     Vector3 mousePos;
+
+    //Time variable
+    private float timestore = 5f, time;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -37,6 +42,14 @@ public class PlayerV2 : MonoBehaviour
     private void Update()
     {
         HandleInput();
+
+        //If canTeleport is false, then start the timer
+        if(canTeleport == false)
+        {
+            HandleTime();
+        }
+        
+
     }
 
     void FixedUpdate()
@@ -51,6 +64,23 @@ public class PlayerV2 : MonoBehaviour
         ResetValues();
     }
 
+    private void HandleTime()
+    {
+        //If time is greater than 0, then start reducing time
+        if (time > 0)
+        {
+            //Take off a second, every update;
+            time -= Time.deltaTime;
+            
+        }
+        else
+        {
+            //After reaching end of timer, set canTeleport to true
+            canTeleport = true;
+            time = timestore; 
+        }
+    }
+
     //Method to handle movement of player using velocity
     private void HandleMovement(float horizontal,float vertical)
     {
@@ -58,9 +88,8 @@ public class PlayerV2 : MonoBehaviour
         if(!this.myanim.GetCurrentAnimatorStateInfo(0).IsTag("Attack"))
         {
             myrigidbody.velocity = new Vector2(horizontal * movementSpeed, vertical * movementSpeed);
-        }
 
-        
+        }
 
     }
 
@@ -96,7 +125,13 @@ public class PlayerV2 : MonoBehaviour
             
         }
         if (Input.GetKey("3")) {
-            HandleTeleport();
+
+            //Only if canTeleport is true, allow teleportation
+            if (canTeleport)
+            {
+                HandleTeleport();
+                canTeleport = false;
+            }
         }
 
         //Throw knife when press V
@@ -283,19 +318,27 @@ public class PlayerV2 : MonoBehaviour
     private void HandleTeleport()
     {
 
-        //Getting mouse position
-        Vector3 mousePosition = Input.mousePosition;
-        mousePosition.z = mainCam.nearClipPlane;
 
-        //Fixing the location of the mouse position
-        mousePos = mainCam.ScreenToWorldPoint(mousePosition);
+        if (facingRight)
+        {
+            GameObject.FindGameObjectWithTag("PC").GetComponent<Transform>().position = new Vector2(GameObject.FindGameObjectWithTag("PC").GetComponent<Transform>().position.x + 4, GameObject.FindGameObjectWithTag("PC").GetComponent<Transform>().position.y);
+        }
+        if (facingDown)
+        {
+            GameObject.FindGameObjectWithTag("PC").GetComponent<Transform>().position = new Vector2(GameObject.FindGameObjectWithTag("PC").GetComponent<Transform>().position.x, GameObject.FindGameObjectWithTag("PC").GetComponent<Transform>().position.y - 4);
+        }
+        if (facingUp)
+        {
+            GameObject.FindGameObjectWithTag("PC").GetComponent<Transform>().position = new Vector2(GameObject.FindGameObjectWithTag("PC").GetComponent<Transform>().position.x, GameObject.FindGameObjectWithTag("PC").GetComponent<Transform>().position.y + 4);
+        }
+        if (facingLeft)
+        {
+            GameObject.FindGameObjectWithTag("PC").GetComponent<Transform>().position = new Vector2(GameObject.FindGameObjectWithTag("PC").GetComponent<Transform>().position.x - 4, GameObject.FindGameObjectWithTag("PC").GetComponent<Transform>().position.y);
+        }
 
-        //Fixing the mouse position by removing the camera additions to the value
-        float x = mousePos.x - mainCam.transform.position.x;
-        float y = mousePos.y - mainCam.transform.position.y;
 
-        //Set the player location
-        GameObject.FindGameObjectWithTag("PC").GetComponent<Transform>().position = new Vector2(x, y);
+
+
     }
 
 
