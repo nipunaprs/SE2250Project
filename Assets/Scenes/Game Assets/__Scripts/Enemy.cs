@@ -22,6 +22,21 @@ public class Enemy : MonoBehaviour
             
            TakeDamage(3);
         }
+        if ( anim.GetCurrentAnimatorStateInfo(0).IsName("attackup") &&(go.tag=="PC"))
+        {
+            
+           TakeDamage(3);
+        }
+        if ( anim.GetCurrentAnimatorStateInfo(0).IsName("attackleft") &&(go.tag=="PC"))
+        {
+            
+           TakeDamage(3);
+        }
+        if ( anim.GetCurrentAnimatorStateInfo(0).IsName("attackdown") &&(go.tag=="PC"))
+        {
+            
+           TakeDamage(3);
+        }
          
      }
 
