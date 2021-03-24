@@ -2078,6 +2078,27 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1510912698317405918}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1077938880 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1510912699669992263, guid: b38a8178338144147b796b18cedd7f38,
+    type: 3}
+  m_PrefabInstance: {fileID: 1510912698317405918}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1077938884
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1077938880}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d7975647b4c6ec46b65d7ceaf83c030, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spider: {fileID: 0}
+  health: 16
+  speed: 0
 --- !u!114 &1161823323 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2317791826170424484, guid: f1fb82917918dfd4ba0cde9340438492,
@@ -44093,6 +44114,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -5082647867107538632, guid: b38a8178338144147b796b18cedd7f38,
         type: 3}
+      propertyPath: speed
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: -5082647867107538632, guid: b38a8178338144147b796b18cedd7f38,
+        type: 3}
       propertyPath: player
       value: 
       objectReference: {fileID: 0}
@@ -44105,6 +44131,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Spider
+      objectReference: {fileID: 0}
+    - target: {fileID: 1510912698740378177, guid: b38a8178338144147b796b18cedd7f38,
+        type: 3}
+      propertyPath: m_TagString
+      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 1510912698740378238, guid: b38a8178338144147b796b18cedd7f38,
         type: 3}

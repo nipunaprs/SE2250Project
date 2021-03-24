@@ -355,9 +355,12 @@ public class PlayerV2 : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
      {
-         print("Hit");
+         if( collision.gameObject.tag.Equals("Enemy") == true ) {
+             print("Hit");
 
-         TakeDamage(2);
+            TakeDamage(2);
+
+         }
          
      }
 
