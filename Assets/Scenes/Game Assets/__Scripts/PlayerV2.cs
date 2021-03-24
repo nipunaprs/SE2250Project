@@ -26,7 +26,10 @@ public class PlayerV2 : MonoBehaviour
     public GameObject knifePrefab;
 
     public Camera mainCam;
-    Vector3 mousePos;
+    public int maxHealth = 20; //Set player max value
+    public int currentHealth = 20; //tracks current health
+
+    public HealthBar healthBar; //Gets healthbar
 
     //Time variable
     private float timestore = 5f, time;
@@ -36,6 +39,8 @@ public class PlayerV2 : MonoBehaviour
     {
         myrigidbody = GetComponent<Rigidbody2D>();
         myanim = GetComponent<Animator>();
+        currentHealth = maxHealth;
+        healthBar.SetMaxHealth(maxHealth);
 
     }
 
@@ -340,6 +345,21 @@ public class PlayerV2 : MonoBehaviour
 
 
     }
+
+    void TakeDamage(int damage)
+    {
+        currentHealth = currentHealth - damage;
+
+        healthBar.SetHealth(currentHealth);
+    }
+
+    void OnCollisionEnter2D(Collision2D collision)
+     {
+         print("Hit");
+
+         TakeDamage(2);
+         
+     }
 
 
 

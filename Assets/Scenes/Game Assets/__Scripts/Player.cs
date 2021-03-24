@@ -32,20 +32,8 @@ public class Player : MonoBehaviour
 
         healthBar.SetHealth(currentHealth);
     }
-    void onTriggerEnter2D(Collider other) {
-        speed = speed*-1; 
-        TakeDamage(2);
-        
-    }
 
-    void OnCollisionEnter2D(Collision2D collision)
-     {
-         print("Hit");
 
-         TakeDamage(2);
-         speed = speed*-1; 
-         
-     }
 
 
      
