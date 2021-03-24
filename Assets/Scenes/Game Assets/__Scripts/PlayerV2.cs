@@ -1,13 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerV2 : MonoBehaviour
 {
 
     private Rigidbody2D myrigidbody;
     private Animator myanim;
-
+    public Image image;
+    
     public float movementSpeed;
 
     private bool facingUp = false;
@@ -34,9 +36,12 @@ public class PlayerV2 : MonoBehaviour
     //Time variable
     private float timestore = 5f, time;
 
+
     // Start is called before the first frame update
     void Start()
     {
+        
+        
         myrigidbody = GetComponent<Rigidbody2D>();
         myanim = GetComponent<Animator>();
         currentHealth = maxHealth;
@@ -76,6 +81,22 @@ public class PlayerV2 : MonoBehaviour
         {
             //Take off a second, every update;
             time -= Time.deltaTime;
+            Color c = image.color;
+
+            if (time <= 5 && time > 3) {
+                
+                c.a = 0.0f;
+            }
+            if (time <= 3 && time > 1) {
+                
+                c.a = 0.5f;
+            }
+            if (time <= 1 && time > 0) {
+                
+                c.a = 1.0f;
+            }
+            
+            image.color = c;
             
         }
         else
@@ -355,14 +376,14 @@ public class PlayerV2 : MonoBehaviour
         healthBar.SetHealth(currentHealth);
     }
 
-    //tester
-    void OnCollisionEnter2D(Collision2D collision)
-     {
+    // //tester
+    // void OnCollisionEnter2D(Collision2D collision)
+    //  {
         
 
-         TakeDamage(2);
+    //      TakeDamage(2);
          
-     }
+    //  }
 
 
 
