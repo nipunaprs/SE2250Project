@@ -8,7 +8,8 @@ public class PlayerV2 : MonoBehaviour
 
     private Rigidbody2D myrigidbody;
     private Animator myanim;
-    public Image image;
+    public Image teleImage;
+    public Image invImage;
     
     public float movementSpeed;
 
@@ -23,6 +24,9 @@ public class PlayerV2 : MonoBehaviour
     private bool attackLeft;
 
     private bool canTeleport;
+    private bool canInvincible;
+
+    private bool isInvincible;
 
     private bool throwKnife;
     public GameObject knifePrefab;
@@ -34,7 +38,7 @@ public class PlayerV2 : MonoBehaviour
     public HealthBar healthBar; //Gets healthbar
 
     //Time variable
-    private float timestore = 5f, time;
+    private float timestore = 5f, teleTime,invTime,powerTime;
 
 
     // Start is called before the first frame update
@@ -46,6 +50,9 @@ public class PlayerV2 : MonoBehaviour
         myanim = GetComponent<Animator>();
         currentHealth = maxHealth;
         healthBar.SetMaxHealth(maxHealth);
+        canTeleport = true;
+        canInvincible = true;
+        invTime = timestore;
 
     }
 
@@ -56,7 +63,14 @@ public class PlayerV2 : MonoBehaviour
         //If canTeleport is false, then start the timer
         if(canTeleport == false)
         {
-            HandleTime();
+            HandleTeleTime();
+            
+        }
+
+        //If canTeleport is false, then start the timer
+        if(canInvincible == false)
+        {
+            HandleInvTime();
         }
         
 
@@ -74,36 +88,82 @@ public class PlayerV2 : MonoBehaviour
         ResetValues();
     }
 
-    private void HandleTime()
+    private void HandleInvTime()
+    {
+        
+        if (isInvincible) {
+            powerTime -= Time.deltaTime;
+            print(powerTime);
+            if (powerTime < 0) {
+                isInvincible=false;
+            }
+        }
+        else {
+
+            
+            //If time is greater than 0, then start reducing time
+            if (invTime > 0)
+            {
+                //Take off a second, every update;
+                invTime -= Time.deltaTime;
+                Color c = invImage.color;
+
+                if (invTime <= 5 && invTime > 3) {
+                    
+                    c.a = 0.0f;
+                }
+                if (invTime <= 3 && invTime > 1) {
+                    
+                    c.a = 0.5f;
+                }
+                if (invTime <= 1 && invTime > 0) {
+                    
+                    c.a = 1.0f;
+                }
+                
+                invImage.color = c;
+                
+            }
+            else
+            {
+                //After reaching end of timer, set canTeleport to true
+                canInvincible = true;
+                invTime = timestore; 
+            }
+        }
+        
+    }
+
+    private void HandleTeleTime()
     {
         //If time is greater than 0, then start reducing time
-        if (time > 0)
+        if (teleTime > 0)
         {
             //Take off a second, every update;
-            time -= Time.deltaTime;
-            Color c = image.color;
+            teleTime -= Time.deltaTime;
+            Color c = teleImage.color;
 
-            if (time <= 5 && time > 3) {
+            if (teleTime <= 5 && teleTime > 3) {
                 
                 c.a = 0.0f;
             }
-            if (time <= 3 && time > 1) {
+            if (teleTime <= 3 && teleTime > 1) {
                 
                 c.a = 0.5f;
             }
-            if (time <= 1 && time > 0) {
+            if (teleTime <= 1 && teleTime > 0) {
                 
                 c.a = 1.0f;
             }
             
-            image.color = c;
+            teleImage.color = c;
             
         }
         else
         {
             //After reaching end of timer, set canTeleport to true
             canTeleport = true;
-            time = timestore; 
+            teleTime = timestore; 
         }
     }
 
@@ -157,6 +217,17 @@ public class PlayerV2 : MonoBehaviour
             {
                 HandleTeleport();
                 canTeleport = false;
+            }
+        }
+        if (Input.GetKey("1")) {
+
+            //Only if canTeleport is true, allow teleportation
+            if (canInvincible)
+            {
+                
+                isInvincible = true;
+                powerTime = 5.0f;
+                canInvincible = false;
             }
         }
 
@@ -369,24 +440,20 @@ public class PlayerV2 : MonoBehaviour
 
     private void TakeDamage(int damage)
     {
-        //Remove health
-        currentHealth = currentHealth - damage;
+        if (!isInvincible) {
+            //Remove health
+            currentHealth = currentHealth - damage;
 
-        //Update health
-        healthBar.SetHealth(currentHealth);
+            //Update health
+            healthBar.SetHealth(currentHealth);
+        }
+        
     }
 
-    // //tester
-    // void OnCollisionEnter2D(Collision2D collision)
-    //  {
-        
-
-    //      TakeDamage(2);
-         
-    //  }
-
-
-
+    void OnCollisionEnter2D(Collision2D collision)
+     {
+         TakeDamage(2);
+     }
 
 
 }
