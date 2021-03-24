@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerV2 : MonoBehaviour
 {
 
+    public GameObject player;
     private Rigidbody2D myrigidbody;
     private Animator myanim;
 
