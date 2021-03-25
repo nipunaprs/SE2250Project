@@ -9,6 +9,8 @@ TagManager:
   - PC
   - Knife
   - PowerThree
+  - projectile
+  - spider
   layers:
   - Default
   - TransparentFX

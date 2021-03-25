@@ -1927,7 +1927,6 @@ MonoBehaviour:
   movementSpeed: 5
   knifePrefab: {fileID: 1354001833492059366, guid: de9b679474c5f9e418432a010d672283,
     type: 3}
-  mainCam: {fileID: 944993691}
   maxHealth: 20
   currentHealth: 20
   healthBar: {fileID: 1161823323}
@@ -44148,6 +44147,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Spider
+      objectReference: {fileID: 0}
+    - target: {fileID: 1510912698740378177, guid: b38a8178338144147b796b18cedd7f38,
+        type: 3}
+      propertyPath: m_TagString
+      value: spider
       objectReference: {fileID: 0}
     - target: {fileID: 1510912698740378238, guid: b38a8178338144147b796b18cedd7f38,
         type: 3}
