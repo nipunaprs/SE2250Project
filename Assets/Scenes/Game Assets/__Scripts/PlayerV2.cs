@@ -469,6 +469,12 @@ public class PlayerV2 : MonoBehaviour
         
     }
 
+    private void increaseHealth() {
+        currentHealth = currentHealth + 50; 
+        healthBar.SetHealth(currentHealth); 
+
+    }
+
     //This handles the collision action
     void OnCollisionEnter2D(Collision2D collision)
      {
@@ -488,6 +494,11 @@ public class PlayerV2 : MonoBehaviour
         //Checks to see if the tag is projectile
         if (col.tag == "projectile") {
             TakeDamage(1);
+        }
+
+        if (col.tag == "Heart") {
+            increaseHealth(); 
+            col.gameObject.SetActive(false); 
         }
 
 

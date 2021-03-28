@@ -32,10 +32,6 @@ public class Player : MonoBehaviour
 
         healthBar.SetHealth(currentHealth);
     }
-
-
-
-
-     
+ 
     
 }
