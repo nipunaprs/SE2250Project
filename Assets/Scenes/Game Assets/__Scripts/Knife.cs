@@ -36,5 +36,20 @@ public class Knife : MonoBehaviour
     {
         Destroy(gameObject);
     }
+    
+    //Destroy knife when colliding with Spider
+    void OnTriggerEnter2D(Collider2D col)
+    {
+
+        //Checks to see if the tag is projectile
+        if (col.tag == "spider")
+        {
+            
+            Destroy(gameObject);
+        }
+
+
+    }
+
 
 }
