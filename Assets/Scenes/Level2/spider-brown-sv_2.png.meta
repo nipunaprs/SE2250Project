@@ -1,0 +1,1404 @@
+fileFormatVersion: 2
+guid: 16084c1558680c04393a2a07e396d4a0
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2480462036195146175
+    second: spider-brown-sv_2_0
+  - first:
+      213: 4758913108886310671
+    second: spider-brown-sv_2_1
+  - first:
+      213: 7684327744668658098
+    second: spider-brown-sv_2_2
+  - first:
+      213: -6244698289124843712
+    second: spider-brown-sv_2_3
+  - first:
+      213: -8571379818989471490
+    second: spider-brown-sv_2_4
+  - first:
+      213: -1746009558331811124
+    second: spider-brown-sv_2_5
+  - first:
+      213: -4862975975780959579
+    second: spider-brown-sv_2_6
+  - first:
+      213: -8325958176484715491
+    second: spider-brown-sv_2_7
+  - first:
+      213: -6262970056276733788
+    second: spider-brown-sv_2_8
+  - first:
+      213: -4516381476137607154
+    second: spider-brown-sv_2_9
+  - first:
+      213: -8857130641401952122
+    second: spider-brown-sv_2_10
+  - first:
+      213: 6018503082741778747
+    second: spider-brown-sv_2_11
+  - first:
+      213: -4013899641494239003
+    second: spider-brown-sv_2_12
+  - first:
+      213: -5172091886642974373
+    second: spider-brown-sv_2_13
+  - first:
+      213: -7018193164354152902
+    second: spider-brown-sv_2_14
+  - first:
+      213: 2648969072795296537
+    second: spider-brown-sv_2_15
+  - first:
+      213: 6689190584260520988
+    second: spider-brown-sv_2_16
+  - first:
+      213: -2641532735633528460
+    second: spider-brown-sv_2_17
+  - first:
+      213: -3719068269862923264
+    second: spider-brown-sv_2_18
+  - first:
+      213: -8031111633504300876
+    second: spider-brown-sv_2_19
+  - first:
+      213: 3138784006381618389
+    second: spider-brown-sv_2_20
+  - first:
+      213: 5029530445161316242
+    second: spider-brown-sv_2_21
+  - first:
+      213: -3680109830892734383
+    second: spider-brown-sv_2_22
+  - first:
+      213: -4313485689180670262
+    second: spider-brown-sv_2_23
+  - first:
+      213: -3043087980815123386
+    second: spider-brown-sv_2_24
+  - first:
+      213: -881581330675495973
+    second: spider-brown-sv_2_25
+  - first:
+      213: 7451182634398300005
+    second: spider-brown-sv_2_26
+  - first:
+      213: -9099649410118390660
+    second: spider-brown-sv_2_27
+  - first:
+      213: 7005747416804230391
+    second: spider-brown-sv_2_28
+  - first:
+      213: 350706170965150886
+    second: spider-brown-sv_2_29
+  - first:
+      213: -4398238155029201734
+    second: spider-brown-sv_2_30
+  - first:
+      213: -7913486580171021279
+    second: spider-brown-sv_2_31
+  - first:
+      213: -5841875022111271201
+    second: spider-brown-sv_2_32
+  - first:
+      213: 1760239745562385427
+    second: spider-brown-sv_2_33
+  - first:
+      213: 1969609016591112493
+    second: spider-brown-sv_2_34
+  - first:
+      213: 8262052199555201541
+    second: spider-brown-sv_2_35
+  - first:
+      213: -7804845493029540658
+    second: spider-brown-sv_2_36
+  - first:
+      213: -4365746733209364227
+    second: spider-brown-sv_2_37
+  - first:
+      213: 8795302661565357906
+    second: spider-brown-sv_2_38
+  - first:
+      213: -6180879760547324467
+    second: spider-brown-sv_2_39
+  - first:
+      213: 4168283804911172996
+    second: spider-brown-sv_2_40
+  - first:
+      213: -4267912920457898474
+    second: spider-brown-sv_2_41
+  - first:
+      213: 3127283968767800310
+    second: spider-brown-sv_2_42
+  - first:
+      213: -5770069436374712884
+    second: spider-brown-sv_2_43
+  - first:
+      213: -5259863274511809492
+    second: spider-brown-sv_2_44
+  - first:
+      213: -9055770356350854267
+    second: spider-brown-sv_2_45
+  - first:
+      213: -5368562888793604866
+    second: spider-brown-sv_2_46
+  - first:
+      213: -8479035944410106414
+    second: spider-brown-sv_2_47
+  - first:
+      213: -644999917036021021
+    second: spider-brown-sv_2_48
+  - first:
+      213: 7750122027293850009
+    second: spider-brown-sv_2_49
+  - first:
+      213: 6020964921893067243
+    second: spider-brown-sv_2_50
+  - first:
+      213: -6934586516916452656
+    second: spider-brown-sv_2_51
+  - first:
+      213: 7069620950626747914
+    second: spider-brown-sv_2_52
+  - first:
+      213: -9184473018433855880
+    second: spider-brown-sv_2_53
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: spider-brown-sv_2_0
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 322
+        width: 51
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1460fbd8be0a39dd0800000000000000
+      internalID: -2480462036195146175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spider-brown-sv_2_1
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 322
+        width: 51
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0f4e1c324e0b0240800000000000000
+      internalID: 4758913108886310671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spider-brown-sv_2_2
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 322
+        width: 51
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b967a6de5734aa60800000000000000
+      internalID: 7684327744668658098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spider-brown-sv_2_3
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 322
+        width: 51
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04f593bedff5659a0800000000000000
+      internalID: -6244698289124843712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spider-brown-sv_2_4
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 322
+        width: 46
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef83e2eb7775c0980800000000000000
+      internalID: -8571379818989471490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spider-brown-sv_2_5
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 322
+        width: 46
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cca1235be8de4c7e0800000000000000
+      internalID: -1746009558331811124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spider-brown-sv_2_6
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 322
+        width: 46
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5aa315c7d1d338cb0800000000000000
+      internalID: -4862975975780959579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spider-brown-sv_2_7
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 322
+        width: 46
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d149edbb621447c80800000000000000
+      internalID: -8325958176484715491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spider-brown-sv_2_8
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 322
+        width: 46
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a097bc9ae57519a0800000000000000
+      internalID: -6262970056276733788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spider-brown-sv_2_9
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 258
+        width: 51
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e00e9ace9f69251c0800000000000000
+      internalID: -4516381476137607154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spider-brown-sv_2_10
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 258
+        width: 51
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6884206db96251580800000000000000
+      internalID: -8857130641401952122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spider-brown-sv_2_11
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 258
+        width: 51
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b39ca669aa4068350800000000000000
+      internalID: 6018503082741778747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spider-brown-sv_2_12
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 266
+        width: 56
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e80ba8ea83cb48c0800000000000000
+      internalID: -4013899641494239003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spider-brown-sv_2_13
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 257
+        width: 56
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5137fef4d90938b0800000000000000
+      internalID: -5172091886642974373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spider-brown-sv_2_14
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 257
+        width: 56
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a369891408e5a9e90800000000000000
+      internalID: -7018193164354152902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spider-brown-sv_2_15
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 266
+        width: 56
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 913a5fc365703c420800000000000000
+      internalID: 2648969072795296537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spider-brown-sv_2_16
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 266
+        width: 56
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1c6cb14567c4dc50800000000000000
+      internalID: 6689190584260520988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spider-brown-sv_2_17
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 266
+        width: 56
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4796ffde8f3675bd0800000000000000
+      internalID: -2641532735633528460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spider-brown-sv_2_18
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 194
+        width: 51
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 004d46fec17336cc0800000000000000
+      internalID: -3719068269862923264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spider-brown-sv_2_19
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 194
+        width: 51
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b0187d1582cb8090800000000000000
+      internalID: -8031111633504300876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spider-brown-sv_2_20
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 194
+        width: 51
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d4cd0f7c633f8b20800000000000000
+      internalID: 3138784006381618389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spider-brown-sv_2_21
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 194
+        width: 51
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29f3ad2da4b7cc540800000000000000
+      internalID: 5029530445161316242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spider-brown-sv_2_22
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 194
+        width: 51
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 158373b5b9f9decc0800000000000000
+      internalID: -3680109830892734383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spider-brown-sv_2_23
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 194
+        width: 51
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac6b7a89e9b6324c0800000000000000
+      internalID: -4313485689180670262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spider-brown-sv_2_24
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 194
+        width: 51
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64cf04bba97c4c5d0800000000000000
+      internalID: -3043087980815123386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spider-brown-sv_2_25
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 193
+        width: 51
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdb8878537ef3c3f0800000000000000
+      internalID: -881581330675495973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spider-brown-sv_2_26
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 194
+        width: 51
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 567bedfb02be76760800000000000000
+      internalID: 7451182634398300005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spider-brown-sv_2_27
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 130
+        width: 51
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7cec41d21d87b180800000000000000
+      internalID: -9099649410118390660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spider-brown-sv_2_28
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 130
+        width: 51
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f40ab4582a693160800000000000000
+      internalID: 7005747416804230391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spider-brown-sv_2_29
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 130
+        width: 51
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ac4ae48765fdd400800000000000000
+      internalID: 350706170965150886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spider-brown-sv_2_30
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 130
+        width: 51
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abc3aeb63b156f2c0800000000000000
+      internalID: -4398238155029201734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spider-brown-sv_2_31
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 130
+        width: 51
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 124e51ef1e5ad2290800000000000000
+      internalID: -7913486580171021279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spider-brown-sv_2_32
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 130
+        width: 51
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd694d47e9d7deea0800000000000000
+      internalID: -5841875022111271201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spider-brown-sv_2_33
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 130
+        width: 51
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31c15c1f8b0ad6810800000000000000
+      internalID: 1760239745562385427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spider-brown-sv_2_34
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 129
+        width: 51
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d29d15417f4755b10800000000000000
+      internalID: 1969609016591112493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spider-brown-sv_2_35
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 130
+        width: 51
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50af83683b4b8a270800000000000000
+      internalID: 8262052199555201541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spider-brown-sv_2_36
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 66
+        width: 51
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecc6a2d306e9fa390800000000000000
+      internalID: -7804845493029540658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spider-brown-sv_2_37
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 66
+        width: 51
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df8dbb31a70c963c0800000000000000
+      internalID: -4365746733209364227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spider-brown-sv_2_38
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 66
+        width: 51
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25f96a2db213f0a70800000000000000
+      internalID: 8795302661565357906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spider-brown-sv_2_39
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 66
+        width: 51
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcddc210b9a193aa0800000000000000
+      internalID: -6180879760547324467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spider-brown-sv_2_40
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 74
+        width: 56
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48d7eba3908b8d930800000000000000
+      internalID: 4168283804911172996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spider-brown-sv_2_41
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 74
+        width: 56
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6169ecbafc355c4c0800000000000000
+      internalID: -4267912920457898474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spider-brown-sv_2_42
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 66
+        width: 51
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f3bd265338566b20800000000000000
+      internalID: 3127283968767800310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spider-brown-sv_2_43
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 65
+        width: 51
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccdfb833b689cefa0800000000000000
+      internalID: -5770069436374712884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spider-brown-sv_2_44
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 66
+        width: 51
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c24c99348363107b0800000000000000
+      internalID: -5259863274511809492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spider-brown-sv_2_45
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 10
+        width: 56
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58bd13627d0735280800000000000000
+      internalID: -9055770356350854267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spider-brown-sv_2_46
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 10
+        width: 56
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efcbc1b1f780f75b0800000000000000
+      internalID: -5368562888793604866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spider-brown-sv_2_47
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 10
+        width: 56
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d5baaf7bb9645a80800000000000000
+      internalID: -8479035944410106414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spider-brown-sv_2_48
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 2
+        width: 51
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ea59e82eff7c07f0800000000000000
+      internalID: -644999917036021021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spider-brown-sv_2_49
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 2
+        width: 51
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 999b7c20ce6fd8b60800000000000000
+      internalID: 7750122027293850009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spider-brown-sv_2_50
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 2
+        width: 51
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be9168e22b3ce8350800000000000000
+      internalID: 6020964921893067243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spider-brown-sv_2_51
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 0
+        width: 36
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d24bfacd4663cf90800000000000000
+      internalID: -6934586516916452656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spider-brown-sv_2_52
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 0
+        width: 36
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0644c25cc65c1260800000000000000
+      internalID: 7069620950626747914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spider-brown-sv_2_53
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 0
+        width: 36
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87e171f73723a8080800000000000000
+      internalID: -9184473018433855880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
