@@ -44,6 +44,8 @@ public class PlayerV2 : MonoBehaviour
     //Time variable
     private float timestore = 5f, teleTime,invTime,powerTime;
 
+    private bool isRunning;
+
 
     // Start is called before the first frame update
     void Start()
@@ -260,6 +262,19 @@ public class PlayerV2 : MonoBehaviour
             throwKnife = true;
             ThrowKnife(0);
         }
+
+
+        //Sprint when pressing Q is pressed down
+        if(Input.GetKey(KeyCode.Q))
+        {
+            myanim.SetFloat("runmultiplier", 3);
+            movementSpeed = 8;
+        }
+        else
+        {
+            ResetRun();
+        }
+        
     }
 
     //Resets all attack values every FixedUpdate at the end
@@ -270,11 +285,15 @@ public class PlayerV2 : MonoBehaviour
         attackUp = false;
         attackLeft = false;
         throwKnife = false;
-        
+ 
     }
 
+    private void ResetRun()
+    {
+        myanim.SetFloat("runmultiplier", 1);
+        movementSpeed = 5;
+    }
     
-
     public void ThrowKnife(int value)
     {
         //If facingright and after any Attack animation is done, then allow to throw another knife
