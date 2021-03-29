@@ -59,7 +59,7 @@ public class Enemy : MonoBehaviour
      void FixedUpdate() {
          if (health <= 0) {
              print("dead");
-             Destroy(spider);
+             Destroy(this.gameObject);
          }
         
      }

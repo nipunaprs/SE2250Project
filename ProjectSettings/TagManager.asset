@@ -15,6 +15,7 @@ TagManager:
   - teleport
   - lava
   - key
+  - bat
   layers:
   - Default
   - TransparentFX

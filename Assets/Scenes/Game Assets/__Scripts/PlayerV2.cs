@@ -265,9 +265,14 @@ public class PlayerV2 : MonoBehaviour
             throwKnife = true;
             ThrowKnife(0);
 
-            this.transform.position = new Vector3(0, 50, 0);
+            
         }
 
+        //REMOVE AFTERWARDS, TRANSPORT TO LEVEL2 QUICK
+        if(Input.GetKeyDown(KeyCode.B))
+        {
+            transform.position = new Vector3(0, 50, 0);
+        }
 
         //Sprint when pressing Q is pressed down
         if(Input.GetKey(KeyCode.Q))
@@ -507,7 +512,13 @@ public class PlayerV2 : MonoBehaviour
 
             TakeDamage(2);
 
-         } 
+         }
+
+         //Player takes damage if they touch the bat
+        if (collision.gameObject.tag.Equals("bat") == true)
+        {
+            TakeDamage(2);
+        }
 
     }
 
@@ -532,6 +543,11 @@ public class PlayerV2 : MonoBehaviour
             this.transform.position = new Vector3(0,50,0);
             
 
+        }
+
+        if(col.tag == "bat")
+        {
+            TakeDamage(1);
         }
 
         //Touch the lava, do 10 damage

@@ -10,6 +10,7 @@ public class Knife : MonoBehaviour
 
     private Vector2 direction;
 
+    
 
     // Start is called before the first frame update
     void Start()
@@ -45,6 +46,11 @@ public class Knife : MonoBehaviour
         if (col.tag == "spider")
         {
             
+            Destroy(gameObject);
+        }
+
+        if(col.tag == "bat")
+        {
             Destroy(gameObject);
         }
 
