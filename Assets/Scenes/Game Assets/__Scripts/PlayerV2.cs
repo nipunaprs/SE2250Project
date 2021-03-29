@@ -44,7 +44,8 @@ public class PlayerV2 : MonoBehaviour
     //Time variable
     private float timestore = 5f, teleTime,invTime,powerTime;
 
-    private bool isRunning;
+    
+    private bool gotKey = false;
 
 
     // Start is called before the first frame update
@@ -66,6 +67,8 @@ public class PlayerV2 : MonoBehaviour
 
         //Set the invtime to 5
         invTime = timestore;
+
+        
 
     }
 
@@ -261,6 +264,8 @@ public class PlayerV2 : MonoBehaviour
             if (facingUp) attackUp = true;
             throwKnife = true;
             ThrowKnife(0);
+
+            this.transform.position = new Vector3(0, 50, 0);
         }
 
 
@@ -518,6 +523,35 @@ public class PlayerV2 : MonoBehaviour
         if (col.tag == "Heart") {
             increaseHealth(); 
             col.gameObject.SetActive(false); 
+        }
+
+        //Teleport to second level
+        if(col.tag == "teleport")
+        {
+            print("touched");
+            this.transform.position = new Vector3(0,50,0);
+            
+
+        }
+
+        //Touch the lava, do 10 damage
+        if(col.tag == "lava")
+        {
+            TakeDamage(10);
+        }
+
+        //Got the key, destroy the key and set gotKey to true
+        if(col.tag == "key")
+        {
+            gotKey = true;
+            Destroy(col.gameObject);
+        }
+
+        //Finish the game when touch the final flag and you got the key
+        if(col.gameObject.name == "finalflag" && gotKey == true)
+        {
+            //Show finished game screen
+            
         }
 
 

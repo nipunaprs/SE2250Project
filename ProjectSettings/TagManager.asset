@@ -11,6 +11,10 @@ TagManager:
   - PowerThree
   - projectile
   - spider
+  - Heart
+  - teleport
+  - lava
+  - key
   layers:
   - Default
   - TransparentFX
