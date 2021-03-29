@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class PlayerV2 : MonoBehaviour
@@ -13,7 +14,17 @@ public class PlayerV2 : MonoBehaviour
     //Variables to point to the UI images
     public Image teleImage;
     public Image invImage;
-    
+
+    //Image objects and booleans to control images
+    public GameObject lvl1image;
+    public GameObject lvl2image;
+    public GameObject controlsimage;
+    public GameObject deathimage;
+    public GameObject endimage;
+    private bool reachlvl2 = false;
+    private bool reachend = false;
+    private bool isdead = false;
+
     //Helps track movement speed
     public float movementSpeed;
 
@@ -68,7 +79,18 @@ public class PlayerV2 : MonoBehaviour
         //Set the invtime to 5
         invTime = timestore;
 
-        
+        //Get image objects
+        lvl1image = GameObject.Find("LvlOne");
+        lvl2image = GameObject.Find("LvlTwo");
+        controlsimage = GameObject.Find("Controls");
+        deathimage = GameObject.Find("Death");
+        endimage = GameObject.Find("End");
+
+        //Set everything except lvl1 image to false
+        lvl2image.SetActive(false);
+        controlsimage.SetActive(false);
+        deathimage.SetActive(false);
+        endimage.SetActive(false);
 
     }
 
@@ -88,7 +110,8 @@ public class PlayerV2 : MonoBehaviour
         {
             HandleInvTime();
         }
-        
+
+        HandleImage();
 
     }
 
@@ -104,6 +127,49 @@ public class PlayerV2 : MonoBehaviour
         ResetValues();
     }
 
+    private void HandleImage()
+    {
+        //If Escape is pressed, disable all screens
+        if(Input.GetKeyDown(KeyCode.Escape))
+        {
+            lvl1image.SetActive(false);
+            lvl2image.SetActive(false);
+            controlsimage.SetActive(false);
+            deathimage.SetActive(false);
+            endimage.SetActive(false);
+
+            reachlvl2 = false;
+        }
+
+        //Enable controls screen if C is pressed
+        if(Input.GetKeyDown(KeyCode.C))
+        {
+            controlsimage.SetActive(true);
+        }
+
+        //If reached level2 show the lvl2
+        if(reachlvl2 == true)
+        {
+            lvl2image.SetActive(true);
+        }
+
+        //Show end screen after reached end is true and disable player
+        if(reachend==true)
+        {
+            endimage.SetActive(true);
+            gameObject.SetActive(false);
+        }
+
+        //Show death screen after player health is less than or equal to 0
+        if(isdead==true)
+        {
+            deathimage.SetActive(true);
+            gameObject.SetActive(false);
+        }
+
+
+    }
+    
 
     //Handles the invisibility time duration and cool down
     private void HandleInvTime()
@@ -285,6 +351,9 @@ public class PlayerV2 : MonoBehaviour
             ResetRun();
         }
         
+        
+
+
     }
 
     //Resets all attack values every FixedUpdate at the end
@@ -483,7 +552,7 @@ public class PlayerV2 : MonoBehaviour
 
     }
 
-    private void TakeDamage(int damage)
+    public void TakeDamage(int damage)
     {
         if (!isInvincible) {
             //Remove health
@@ -492,15 +561,21 @@ public class PlayerV2 : MonoBehaviour
             //Update health
             healthBar.SetHealth(currentHealth);
             if(currentHealth<=0) {
-                Destroy(gameObject); 
+                //Destroy(gameObject); 
+                isdead = true;
+                
+                
             }
         }
         
     }
 
     private void increaseHealth() {
-        currentHealth = currentHealth + 50; 
-        healthBar.SetHealth(currentHealth); 
+        currentHealth = currentHealth + 10;
+        maxHealth = maxHealth + 10;
+
+        healthBar.SetHealth(currentHealth);
+        healthBar.SetMaxHealth(maxHealth);
 
     }
 
@@ -520,6 +595,8 @@ public class PlayerV2 : MonoBehaviour
             TakeDamage(2);
         }
 
+        
+
     }
 
     //If player gets hit with a projectile they take damage
@@ -533,7 +610,8 @@ public class PlayerV2 : MonoBehaviour
 
         if (col.tag == "Heart") {
             increaseHealth(); 
-            col.gameObject.SetActive(false); 
+            col.gameObject.SetActive(false);
+           
         }
 
         //Teleport to second level
@@ -541,7 +619,7 @@ public class PlayerV2 : MonoBehaviour
         {
             print("touched");
             this.transform.position = new Vector3(0,50,0);
-            
+            reachlvl2 = true;
 
         }
 
@@ -567,6 +645,7 @@ public class PlayerV2 : MonoBehaviour
         if(col.gameObject.name == "finalflag" && gotKey == true)
         {
             //Show finished game screen
+            reachend = true;
             
         }
 
