@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Spider : Enemy
 {
@@ -40,6 +41,9 @@ public bool isAttacking;
       max = transform.position.x + 3; 
       
       attackNow= false; 
+      this.xp = 10;
+      this.xpbar.SetMaxXP(30);
+      this.xpbar.SetXP(0);
 
       
    }
