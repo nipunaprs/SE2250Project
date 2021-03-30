@@ -17,6 +17,8 @@ TagManager:
   - key
   - bat
   - boss
+  - XPSLIDE
+  - XPBAR
   layers:
   - Default
   - TransparentFX

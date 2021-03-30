@@ -11,7 +11,6 @@ public class Enemy : MonoBehaviour
     public Slider slider;
 
     public XPBar xpbar;
-    public Transform heart;
     
 
     
