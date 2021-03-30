@@ -16,6 +16,7 @@ TagManager:
   - lava
   - key
   - bat
+  - boss
   layers:
   - Default
   - TransparentFX

@@ -55,6 +55,11 @@ public class Knife : MonoBehaviour
         }
 
 
+        if (col.tag == "boss")
+        {
+            Destroy(gameObject);
+        }
+
     }
 
 

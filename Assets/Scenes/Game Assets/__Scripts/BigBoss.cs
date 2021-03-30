@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BigBoss : MonoBehaviour
+public class BigBoss : Enemy
 {
 
     private bool facingLeft;
@@ -36,12 +36,14 @@ public class BigBoss : MonoBehaviour
         myanim = GetComponent<Animator>();
 
         player = GameObject.FindGameObjectWithTag("PC").transform;
+        health = 30;
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if (health == 0) Destroy(gameObject);
     }
 
     private void FixedUpdate()
@@ -174,6 +176,8 @@ public class BigBoss : MonoBehaviour
         myanim.SetBool("attackleft", false);
     }
 
+    
+
     void HandleDirection()
     {
         //If reached left edge, set to move right
@@ -212,9 +216,23 @@ public class BigBoss : MonoBehaviour
         if (col.tag == "Knife")
         {
 
-            //health = health - 5;
+            health = health - 5;
+            //If hit with knife, start attacking
+            attackNow = true;
         }
+
+        //If playing attack animation and colliding with player, then do damage
+        if (col.tag == "PC" && this.myanim.GetCurrentAnimatorStateInfo(0).IsTag("Attack"))
+        {
+            
+            //Access take damage function in player and do 1 damage
+            col.gameObject.GetComponent<PlayerV2>().TakeDamage(1);
+
+        }
+
     }
+
+    
 
 
 
