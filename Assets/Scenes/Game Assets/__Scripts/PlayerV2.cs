@@ -12,8 +12,9 @@ public class PlayerV2 : MonoBehaviour
     private Animator myanim;
 
     //Variables to point to the UI images
-    public Image teleImage;
-    public Image invImage;
+    //public Image teleImage;
+    //public Image invImage;
+    public Image imagePower;
 
     //Image objects and booleans to control images
     public GameObject lvl1image;
@@ -43,9 +44,12 @@ public class PlayerV2 : MonoBehaviour
     private bool canInvincible;
 
     private bool isInvincible;
+    private int playerChoice;
 
     private bool throwKnife;
     public GameObject knifePrefab;
+    public Sprite invul;
+    public Sprite tele;
 
     public int maxHealth = 150; //Set player max value
     public int currentHealth = 150; //tracks current health
@@ -65,6 +69,7 @@ public class PlayerV2 : MonoBehaviour
         
         myrigidbody = GetComponent<Rigidbody2D>();
         myanim = GetComponent<Animator>();
+        playerChoice = PlayerPrefs.GetInt("SavedInteger");
 
         //Ensures currenthealth is at max health
         currentHealth = maxHealth;
@@ -91,6 +96,13 @@ public class PlayerV2 : MonoBehaviour
         controlsimage.SetActive(false);
         deathimage.SetActive(false);
         endimage.SetActive(false);
+
+        if (playerChoice == 1) {
+            imagePower.sprite = invul;
+        }
+        if (playerChoice == 2) {
+            imagePower.sprite = tele;
+        }
 
     }
 
@@ -194,7 +206,7 @@ public class PlayerV2 : MonoBehaviour
                 invTime -= Time.deltaTime;
 
                 //We set the UI image so it indicates to the player that their powerup is currently coolign down
-                Color c = invImage.color;
+                Color c = imagePower.color;
 
                 if (invTime <= 5 && invTime > 3) {
                     
@@ -209,7 +221,7 @@ public class PlayerV2 : MonoBehaviour
                     c.a = 1.0f;
                 }
                 
-                invImage.color = c;
+                imagePower.color = c;
                 
             }
             else
@@ -229,7 +241,7 @@ public class PlayerV2 : MonoBehaviour
         {
             //Take off a second, every update;
             teleTime -= Time.deltaTime;
-            Color c = teleImage.color;
+            Color c = imagePower.color;
 
             if (teleTime <= 5 && teleTime > 3) {
                 
@@ -244,7 +256,7 @@ public class PlayerV2 : MonoBehaviour
                 c.a = 1.0f;
             }
             
-            teleImage.color = c;
+            imagePower.color = c;
             
         }
         else
@@ -301,16 +313,13 @@ public class PlayerV2 : MonoBehaviour
         if (Input.GetKey("1")) {
 
             //Only if canTeleport is true, allow teleportation
-            if (canTeleport)
+            if (canTeleport && playerChoice==2)
             {
                 HandleTeleport();
                 canTeleport = false;
             }
-        }
-        if (Input.GetKey("2")) {
-
-            //Only if canInvisble is true, allow invincibility
-            if (canInvincible)
+             //Only if canInvisble is true, allow invincibility
+            else if (canInvincible && playerChoice==1)
             {
                 
                 //Player becomes invincible, reset the powerup duration, and don't allow the player to use the powerup currently
