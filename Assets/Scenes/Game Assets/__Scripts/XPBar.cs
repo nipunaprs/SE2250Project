@@ -15,14 +15,17 @@ public class XPBar : MonoBehaviour
         //slider.value = xp;
     }
 
-    public void SetXP(int xp)
+    public void SetXP(float xp)
     {
         slider.value = xp;
     }
 
-    public void ResetXP(int newMax) {
+    public void IncrementXP(float xp) {
+        SetXP(slider.value + xp);
+    }
+
+    public void ResetXP() {
         slider.value = 0;
-        SetMaxXP(newMax);
         
     }
 
@@ -32,4 +35,5 @@ public class XPBar : MonoBehaviour
         }
         return false;
     }
+    
 }

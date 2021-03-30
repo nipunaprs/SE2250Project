@@ -8,8 +8,6 @@ public class Enemy : MonoBehaviour
     public GameObject spider;
     public int health = 15;
     public int xp;
-    public Slider slider;
-
     public XPBar xpbar;
     
 
@@ -67,12 +65,12 @@ public class Enemy : MonoBehaviour
              print("dead");
             
              Destroy(this.gameObject);
-             xpbar.SetXP((int)slider.value + xp);
+             xpbar.IncrementXP(xp);
 
             if (xpbar.IsMax()) {
                GameObject prefab = GameObject.FindGameObjectWithTag("Heart");
                Instantiate(prefab, new Vector2(spider.transform.position.x,spider.transform.position.y), Quaternion.identity);
-               xpbar.ResetXP(50);
+               xpbar.ResetXP();
                
             }
              

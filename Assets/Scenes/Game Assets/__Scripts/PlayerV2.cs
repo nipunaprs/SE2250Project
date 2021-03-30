@@ -56,6 +56,8 @@ public class PlayerV2 : MonoBehaviour
     public Sprite invul;
     public Sprite tele;
 
+    public XPBar xpbar;
+
     public int maxHealth = 150; //Set player max value
     public int currentHealth = 150; //tracks current health
 
@@ -674,6 +676,11 @@ public class PlayerV2 : MonoBehaviour
         {
             gotKey = true;
             Destroy(col.gameObject);
+            GameObject prefab = GameObject.FindGameObjectWithTag("Heart");
+            Instantiate(prefab, new Vector2(GameObject.FindGameObjectWithTag("key").transform.position.x,GameObject.FindGameObjectWithTag("key").transform.position.y), Quaternion.identity);
+            xpbar.IncrementXP(30);
+            xpbar.ResetXP();
+            
         }
 
         //Finish the game when touch the final flag and you got the key
