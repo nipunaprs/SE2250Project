@@ -98,12 +98,12 @@ public class PlayerV2 : MonoBehaviour
         storyone = GameObject.Find("StoryOne");
         storytwo = GameObject.Find("StoryTwo");
 
-        //Set everything except lvl1 image to false
+        //Set everything except story1 image to false
         lvl2image.SetActive(false);
         controlsimage.SetActive(false);
         deathimage.SetActive(false);
         endimage.SetActive(false);
-        storyone.SetActive(false);
+        lvl1image.SetActive(false);
         storytwo.SetActive(false);
 
         if (playerChoice == 1) {
@@ -166,15 +166,15 @@ public class PlayerV2 : MonoBehaviour
             reachlvl2 = false;
         }
 
-        if (lvl1image.activeInHierarchy == false && resetme ==false)
+        if (storyone.activeInHierarchy == false && resetme ==false)
         {
-            storyone.SetActive(true);
+            storytwo.SetActive(true);
             resetme = true;
         }
 
-        if(storyone.activeInHierarchy == false && lvl1image.activeInHierarchy == false && resetme2 ==false)
+        if(storytwo.activeInHierarchy == false && storyone.activeInHierarchy == false && resetme2 ==false)
         {
-            storytwo.SetActive(true);
+            lvl1image.SetActive(true);
             resetme2 = true;
         }
 
