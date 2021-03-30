@@ -453,7 +453,7 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 1
           m_StringArgument: 
-          m_BoolArgument: 0
+          m_BoolArgument: 1
         m_CallState: 2
       - m_Target: {fileID: 1668860373}
         m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
@@ -465,7 +465,7 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 1
+          m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 1873854079}
         m_TargetAssemblyTypeName: SavePrefs, Assembly-CSharp
@@ -1636,7 +1636,7 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 1
           m_StringArgument: 
-          m_BoolArgument: 0
+          m_BoolArgument: 1
         m_CallState: 2
       - m_Target: {fileID: 124387764}
         m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
@@ -1648,7 +1648,7 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 1
+          m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 1873854079}
         m_TargetAssemblyTypeName: SavePrefs, Assembly-CSharp
