@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -17,14 +18,18 @@ public class PlayerV2 : MonoBehaviour
     public Image imagePower;
 
     //Image objects and booleans to control images
-    public GameObject lvl1image;
-    public GameObject lvl2image;
-    public GameObject controlsimage;
-    public GameObject deathimage;
-    public GameObject endimage;
+    private GameObject lvl1image;
+    private GameObject lvl2image;
+    private GameObject controlsimage;
+    private GameObject deathimage;
+    private GameObject endimage;
+    private GameObject storyone;
+    private GameObject storytwo;
     private bool reachlvl2 = false;
     private bool reachend = false;
     private bool isdead = false;
+    private bool resetme = false;
+    private bool resetme2 = false;
 
     //Helps track movement speed
     public float movementSpeed;
@@ -90,12 +95,16 @@ public class PlayerV2 : MonoBehaviour
         controlsimage = GameObject.Find("Controls");
         deathimage = GameObject.Find("Death");
         endimage = GameObject.Find("End");
+        storyone = GameObject.Find("StoryOne");
+        storytwo = GameObject.Find("StoryTwo");
 
         //Set everything except lvl1 image to false
         lvl2image.SetActive(false);
         controlsimage.SetActive(false);
         deathimage.SetActive(false);
         endimage.SetActive(false);
+        storyone.SetActive(false);
+        storytwo.SetActive(false);
 
         if (playerChoice == 1) {
             imagePower.sprite = invul;
@@ -141,6 +150,8 @@ public class PlayerV2 : MonoBehaviour
 
     private void HandleImage()
     {
+        
+
         //If Escape is pressed, disable all screens
         if(Input.GetKeyDown(KeyCode.Escape))
         {
@@ -149,9 +160,24 @@ public class PlayerV2 : MonoBehaviour
             controlsimage.SetActive(false);
             deathimage.SetActive(false);
             endimage.SetActive(false);
+            storyone.SetActive(false);
+            storytwo.SetActive(false);
 
             reachlvl2 = false;
         }
+
+        if (lvl1image.activeInHierarchy == false && resetme ==false)
+        {
+            storyone.SetActive(true);
+            resetme = true;
+        }
+
+        if(storyone.activeInHierarchy == false && lvl1image.activeInHierarchy == false && resetme2 ==false)
+        {
+            storytwo.SetActive(true);
+            resetme2 = true;
+        }
+
 
         //Enable controls screen if C is pressed
         if(Input.GetKeyDown(KeyCode.C))
