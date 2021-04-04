@@ -14,10 +14,11 @@ public class Bat : Enemy
 
     public float speed;
 
-    
+    private float timestore = 5f;
+    private float time;
 
     private Vector2 direction;
-
+    public GameObject Bomb;
     private Rigidbody2D myrigidbody;
     private Animator myanim;
 
@@ -30,6 +31,7 @@ public class Bat : Enemy
         myrigidbody = GetComponent<Rigidbody2D>();
         myanim = GetComponent<Animator>();
         health = 5;
+        time = timestore;
     }
 
     private void FixedUpdate()
@@ -43,6 +45,17 @@ public class Bat : Enemy
     void Update()
     {
         if (health == 0) Destroy(gameObject);
+
+        if (time > 0)
+        {
+            time -= Time.deltaTime;
+            
+        }
+        else
+        {
+            Instantiate(Bomb, transform.position, Quaternion.identity);
+            time = timestore;
+        }
     }
 
     void HandleDirection()

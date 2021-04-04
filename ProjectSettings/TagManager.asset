@@ -19,6 +19,7 @@ TagManager:
   - boss
   - XPSLIDE
   - XPBAR
+  - bomb
   layers:
   - Default
   - TransparentFX

@@ -47,7 +47,7 @@ public class PlayerV2 : MonoBehaviour
 
     private bool canTeleport;
     private bool canInvincible;
-
+    private bool bombhurt = false;
     private bool isInvincible;
     private int playerChoice;
 
@@ -632,7 +632,19 @@ public class PlayerV2 : MonoBehaviour
             TakeDamage(2);
         }
 
-        
+
+        /*//If in range of bomb and the blow up animation is playing then do damage
+        if (collision.gameObject.tag.Equals("bomb") == true && bombhurt == false)//&& col.gameObject.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsTag("Blow") == true)
+        {
+
+            if (collision.gameObject.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsTag("Blow"))
+            {
+                TakeDamage(5);
+                bombhurt = true;
+            }
+            
+        }*/
+
 
     }
 
@@ -671,6 +683,8 @@ public class PlayerV2 : MonoBehaviour
             TakeDamage(10);
         }
 
+        
+
         //Got the key, destroy the key and set gotKey to true
         if(col.tag == "key")
         {
@@ -689,6 +703,18 @@ public class PlayerV2 : MonoBehaviour
             //Show finished game screen
             reachend = true;
             
+        }
+
+        //If in range of bomb and the blow up animation is playing then do damage
+        if (col.gameObject.tag.Equals("bomb") == true && bombhurt == false)
+        {
+            
+            if (col.gameObject.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsTag("Blow"))
+            {
+                TakeDamage(5);
+                bombhurt = true;
+            }
+
         }
 
 
