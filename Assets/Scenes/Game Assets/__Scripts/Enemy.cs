@@ -9,8 +9,8 @@ public class Enemy : MonoBehaviour
     public int health = 15;
     public int xp;
     public XPBar xpbar;
-    
 
+    
     
 
     void OnCollisionEnter2D(Collision2D collision)
@@ -62,17 +62,22 @@ public class Enemy : MonoBehaviour
 
      void FixedUpdate() {
          if (health <= 0) {
-             print("dead");
-            
-             Destroy(this.gameObject);
-             xpbar.IncrementXP(xp);
+             
 
-            if (xpbar.IsMax()) {
-               GameObject prefab = GameObject.FindGameObjectWithTag("Heart");
-               Instantiate(prefab, new Vector2(spider.transform.position.x,spider.transform.position.y), Quaternion.identity);
-               xpbar.ResetXP();
-               
+            if (xpbar.IsMax())
+            {
+                GameObject prefab = GameObject.FindGameObjectWithTag("Heart");
+                Instantiate(prefab, new Vector2(this.transform.position.x, this.transform.position.y), Quaternion.identity);
+                //Instantiate(heart, transform.position, Quaternion.identity);
+                xpbar.ResetXP();
+
             }
+            xpbar.IncrementXP(xp);
+
+            Destroy(this.gameObject);
+             
+
+            
              
          }
         
