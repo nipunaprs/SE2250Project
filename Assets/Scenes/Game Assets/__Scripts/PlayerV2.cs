@@ -108,6 +108,7 @@ public class PlayerV2 : MonoBehaviour
         lvl1image.SetActive(false);
         storytwo.SetActive(false);
 
+        //Depending on player selection
         if (playerChoice == 1) {
             imagePower.sprite = invul;
         }
@@ -404,12 +405,14 @@ public class PlayerV2 : MonoBehaviour
  
     }
 
+    //Reset the running movement
     private void ResetRun()
     {
         myanim.SetFloat("runmultiplier", 1);
         movementSpeed = 5;
     }
     
+    //Method to throw knife based on direction
     public void ThrowKnife(int value)
     {
         //If facingright and after any Attack animation is done, then allow to throw another knife
@@ -444,6 +447,7 @@ public class PlayerV2 : MonoBehaviour
 
     }
 
+    //Method to handle all attack animations
     private void HandleAttacks()
     {
         //If attackRight is true and we're not already attacking
@@ -589,6 +593,7 @@ public class PlayerV2 : MonoBehaviour
 
     }
 
+    //Take damage method for the player
     public void TakeDamage(int damage)
     {
         if (!isInvincible) {
@@ -607,6 +612,7 @@ public class PlayerV2 : MonoBehaviour
         
     }
 
+    //Increase health method to increase players health and update the bars
     private void increaseHealth() {
         currentHealth = currentHealth + 10;
         maxHealth = maxHealth + 10;
@@ -633,19 +639,6 @@ public class PlayerV2 : MonoBehaviour
         }
 
 
-        /*//If in range of bomb and the blow up animation is playing then do damage
-        if (collision.gameObject.tag.Equals("bomb") == true && bombhurt == false)//&& col.gameObject.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsTag("Blow") == true)
-        {
-
-            if (collision.gameObject.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsTag("Blow"))
-            {
-                TakeDamage(5);
-                bombhurt = true;
-            }
-            
-        }*/
-
-
     }
 
     //If player gets hit with a projectile they take damage
@@ -657,6 +650,7 @@ public class PlayerV2 : MonoBehaviour
             TakeDamage(1);
         }
 
+        //If you collect a heart, call increase health
         if (col.tag == "Heart") {
             increaseHealth(); 
             col.gameObject.SetActive(false);
@@ -672,15 +666,16 @@ public class PlayerV2 : MonoBehaviour
 
         }
 
+        //Take 1 damage if your touching the bat
         if(col.tag == "bat")
         {
             TakeDamage(1);
         }
 
-        //Touch the lava, do 10 damage
+        //Touch the lava, do 1 damage as long as ur in it
         if(col.tag == "lava")
         {
-            TakeDamage(10);
+            TakeDamage(1);
         }
 
         
@@ -689,11 +684,20 @@ public class PlayerV2 : MonoBehaviour
         if(col.tag == "key")
         {
             gotKey = true;
-            Destroy(col.gameObject);
-            GameObject prefab = GameObject.FindGameObjectWithTag("Heart");
-            Instantiate(prefab, new Vector2(GameObject.FindGameObjectWithTag("key").transform.position.x,GameObject.FindGameObjectWithTag("key").transform.position.y), Quaternion.identity);
+
+            if (xpbar.IsMax())
+            {
+                GameObject prefab = GameObject.FindGameObjectWithTag("Heart");
+                Instantiate(prefab, new Vector2(GameObject.FindGameObjectWithTag("key").transform.position.x, GameObject.FindGameObjectWithTag("key").transform.position.y), Quaternion.identity);
+                
+                xpbar.ResetXP();
+
+            }
             xpbar.IncrementXP(30);
-            xpbar.ResetXP();
+
+            Destroy(col.gameObject);
+            
+            
             
         }
 

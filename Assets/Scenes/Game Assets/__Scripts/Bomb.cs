@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Bomb : MonoBehaviour
 {
-
+    //Variables
     private float timestore = 2f;
     private float time;
     private Animator myanim;
@@ -20,6 +20,7 @@ public class Bomb : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //If time is 0, blow up the bomb
         if (time > 0)
         {
             time -= Time.deltaTime;
@@ -36,7 +37,7 @@ public class Bomb : MonoBehaviour
         
 
     }
-
+    //After animation has played, destroy the object
     private void LateUpdate()
     {
         //After animation is done playing and alreadyblew is true, destroy the bomb

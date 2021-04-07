@@ -50,7 +50,7 @@ public class BigBoss : Enemy
     {
         
         
-
+        //If attackNow is false, then just keep running around
         if (attackNow == false)
         {
             
@@ -58,7 +58,7 @@ public class BigBoss : Enemy
             myrigidbody.velocity = direction * speed;
             CheckDistance();
         }
-        else
+        else //Otherwise start moving towards and changing directions
         {
             MoveTowards();
             ChangeDirections();
@@ -81,8 +81,10 @@ public class BigBoss : Enemy
         
     }
 
+    //Handle attack animations and doing damage
     void HandleAttack()
     {
+        //Depending on proximity, change attack animations and direction
         bool isClose = (Vector2.Distance(transform.position, player.position) < 1);
 
         if (player.position.y > transform.position.y && isClose == false)
@@ -147,12 +149,14 @@ public class BigBoss : Enemy
         }
     }
 
+    //Method to move towards the player if in range or attacked
     void MoveTowards()
     {
+        //Set velocity to zero first
         myrigidbody.velocity = Vector2.zero;
         
-
-        if (Vector2.Distance(transform.position, player.position) < stoppingDistance) //&& Vector2.Distance(transform.position, player.position) > retreatDistance)
+        //If player is in attack range start attacking
+        if (Vector2.Distance(transform.position, player.position) < stoppingDistance) 
         {
 
             transform.position = this.transform.position;
@@ -215,7 +219,7 @@ public class BigBoss : Enemy
     {
         if (col.tag == "Knife")
         {
-
+            //Decrease health by 5
             health = health - 5;
             //If hit with knife, start attacking
             attackNow = true;

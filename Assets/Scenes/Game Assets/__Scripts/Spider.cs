@@ -77,7 +77,18 @@ public bool isAttacking;
 
    }*/
 
-   void Update () {
+    void OnTriggerEnter2D(Collider2D col)
+    {
+        if (col.tag == "Knife")
+        {
+
+            TakeDamage(5);
+            //If hit with knife, start attacking
+            attackNow = true;
+        }
+    }
+
+        void Update () {
     if(Vector2.Distance(transform.position, player.position)<distanceBtw) {
       //transform.position = Vector2.MoveTowards(transform.position, player.position, speed*Time.deltaTime);
        attackNow = true; 

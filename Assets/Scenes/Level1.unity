@@ -11560,6 +11560,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 18507376}
     m_Modifications:
+    - target: {fileID: 5439545560147411128, guid: 2d647ec4ec85c3043937102c8f3a773c,
+        type: 3}
+      propertyPath: xpbar
+      value: 
+      objectReference: {fileID: 97513980}
     - target: {fileID: 5439545560147411131, guid: 2d647ec4ec85c3043937102c8f3a773c,
         type: 3}
       propertyPath: m_RootOrder
@@ -11755,7 +11760,7 @@ MonoBehaviour:
     type: 3}
   invul: {fileID: 21300000, guid: ce0e33a15fb432649a85082ba497b71b, type: 3}
   tele: {fileID: 21300000, guid: 873d484ab0531f940aa096e8a19cd347, type: 3}
-  xpbar: {fileID: 0}
+  xpbar: {fileID: 97513980}
   maxHealth: 20
   currentHealth: 20
   healthBar: {fileID: 1161823323}
@@ -11921,6 +11926,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 18507376}
     m_Modifications:
+    - target: {fileID: 5439545560147411128, guid: 2d647ec4ec85c3043937102c8f3a773c,
+        type: 3}
+      propertyPath: xpbar
+      value: 
+      objectReference: {fileID: 97513980}
     - target: {fileID: 5439545560147411131, guid: 2d647ec4ec85c3043937102c8f3a773c,
         type: 3}
       propertyPath: m_RootOrder
@@ -12019,6 +12029,7 @@ Transform:
   - {fileID: 1615515379}
   - {fileID: 250535815}
   - {fileID: 320512136}
+  - {fileID: 1047360189}
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -12027,6 +12038,12 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1510912698740378177, guid: b38a8178338144147b796b18cedd7f38,
     type: 3}
   m_PrefabInstance: {fileID: 1510912698317405918}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1047360189 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8991362368685656610, guid: 70c7d40eb1e96424a90712959ddb0ee8,
+    type: 3}
+  m_PrefabInstance: {fileID: 1551839676}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1059159568
 GameObject:
@@ -82981,7 +82998,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 1017913185}
     m_Modifications:
     - target: {fileID: 276997255008064546, guid: 70c7d40eb1e96424a90712959ddb0ee8,
         type: 3}
@@ -82991,22 +83008,22 @@ PrefabInstance:
     - target: {fileID: 8991362368685656610, guid: 70c7d40eb1e96424a90712959ddb0ee8,
         type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8991362368685656610, guid: 70c7d40eb1e96424a90712959ddb0ee8,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.9
+      value: -16.893957
       objectReference: {fileID: 0}
     - target: {fileID: 8991362368685656610, guid: 70c7d40eb1e96424a90712959ddb0ee8,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 36.7
+      value: -98.25985
       objectReference: {fileID: 0}
     - target: {fileID: 8991362368685656610, guid: 70c7d40eb1e96424a90712959ddb0ee8,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 99.58754
       objectReference: {fileID: 0}
     - target: {fileID: 8991362368685656610, guid: 70c7d40eb1e96424a90712959ddb0ee8,
         type: 3}
@@ -83262,9 +83279,9 @@ MonoBehaviour:
   spider: {fileID: 0}
   health: 10
   xp: 0
-  xpbar: {fileID: 0}
+  xpbar: {fileID: 97513980}
   speed: 3
-  distanceBtw: 2
+  distanceBtw: 7
   stoppingDistance: 2
 --- !u!61 &1594602684
 BoxCollider2D:
@@ -90086,6 +90103,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 18507376}
     m_Modifications:
+    - target: {fileID: 5439545560147411128, guid: 2d647ec4ec85c3043937102c8f3a773c,
+        type: 3}
+      propertyPath: xpbar
+      value: 
+      objectReference: {fileID: 97513980}
     - target: {fileID: 5439545560147411131, guid: 2d647ec4ec85c3043937102c8f3a773c,
         type: 3}
       propertyPath: m_RootOrder

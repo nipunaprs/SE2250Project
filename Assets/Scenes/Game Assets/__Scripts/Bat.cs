@@ -44,8 +44,24 @@ public class Bat : Enemy
     // Update is called once per frame
     void Update()
     {
-        if (health == 0) Destroy(gameObject);
+        if (health == 0)
+        {
+            //Check XP bar is max to spawn a heart
+            if (xpbar.IsMax())
+            {
+                GameObject prefab = GameObject.FindGameObjectWithTag("Heart");
+                Instantiate(prefab, new Vector2(this.transform.position.x, this.transform.position.y), Quaternion.identity);
+                
+                xpbar.ResetXP();
 
+            }
+            xpbar.IncrementXP(10); //Increment by 10
+
+            Destroy(gameObject); //Destroy the object
+            
+        }
+
+        //Every 5 seconds spaw a bomb
         if (time > 0)
         {
             time -= Time.deltaTime;
@@ -91,6 +107,7 @@ public class Bat : Enemy
         }
     }
 
+    //Decrease health if attacked by knife
     void OnTriggerEnter2D(Collider2D col)
     {
         if(col.tag == "Knife")
