@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class Spider : Enemy
 {
@@ -26,6 +25,7 @@ public class Spider : Enemy
 
     public GameObject projectile; 
 
+   // public GameObject Heart;
     Vector3 startPosition; 
 
 public bool attackNow; 
@@ -36,84 +36,47 @@ public bool isAttacking;
       
       //creating player reference to tag
       player = GameObject.FindGameObjectWithTag("PC").transform;
-
+      //minimun x direction position movement for spider 
       min = transform.position.x; 
+      // max x direction positiion for spider
       max = transform.position.x + 3; 
-      
+      //setting boolean attck to false at start of game 
       attackNow= false; 
-      this.xp = 10;
-      this.xpbar.SetMaxXP(30);
-      this.xpbar.SetXP(0);
 
       
    }
-    /*void Update() {
-      
-      // if the distance between the player and enemy is greater than the stopping distance...
-      if(Vector2.Distance(transform.position, player.position)> stoppingDistance  ) {
-        //move enemy towards the player
-         transform.position = Vector2.MoveTowards(transform.position, player.position, speed*Time.deltaTime);
+    
 
-         attack = true; 
-        //if player distance is smaller than the stoppinf distance and greater than the retreating distance ...
-      }else if (Vector2.Distance(transform.position, player.position)< stoppingDistance && Vector2.Distance(transform.position, player.position)> retreatDistance ) {
-          //enemy stops moving 
-            transform.position = this.transform.position; 
-     // id the player distance is smaller than the retreat distance (player too close to enemy) 
-      }else if (Vector2.Distance(transform.position, player.position)< retreatDistance) {
-          //the enemy moves away from player
-          transform.position = Vector2.MoveTowards(transform.position, player.position, -speed*Time.deltaTime);
-
-      }
-
-    //instantiating projectiles 
-    if(time>0) {
-        time-=Time.deltaTime; 
-    } else {
-        //instantiating projectiles from enemy towards player
-         Instantiate(projectile, transform.position, Quaternion.identity); 
-         time=timestore; 
-    }
-
-   }*/
-
-    void OnTriggerEnter2D(Collider2D col)
-    {
-        if (col.tag == "Knife")
-        {
-
-            TakeDamage(5);
-            //If hit with knife, start attacking
-            attackNow = true;
-        }
-    }
-
-        void Update () {
+   void Update () {
+     
+     //setting attack value to true when player approaches spider 
     if(Vector2.Distance(transform.position, player.position)<distanceBtw) {
-      //transform.position = Vector2.MoveTowards(transform.position, player.position, speed*Time.deltaTime);
+     
        attackNow = true; 
 
-
+  // if the player is far away enough, the spider does not attack 
     }  if (Vector2.Distance(transform.position, player.position)> distanceBtw && attackNow==false) {
-       
+    // spider moves in horizantal direction back and forth untill player is close enough to spider   
     transform.position = new Vector3(Mathf.PingPong(Time.time*2,max-min)+min, transform.position.y, transform.position.z); 
-
+  //if the player is close enough to the spider, the spider follows the player and attacks
     }  if (Vector2.Distance(transform.position, player.position)< stoppingDistance && Vector2.Distance(transform.position, player.position)> retreatDistance ) {
 
       transform.position = this.transform.position;
       isAttacking = true; 
 
     }
+    // if player is too close to spider, spider retreats
       if (Vector2.Distance(transform.position, player.position)< retreatDistance) {
 
       transform.position = Vector2.MoveTowards(transform.position, player.position, -speed*Time.deltaTime);
 
    }
+   // while the spider is attacking, it moves towards the player 
    if (attackNow==true ) {
     transform.position = Vector2.MoveTowards(transform.position, player.position, speed*Time.deltaTime);
    }
     
-
+  // while attacknow and is attacking is true, the spider instantiates projectiles doing damage
    if(time>0) {
         time-=Time.deltaTime; 
     }  else {
@@ -121,16 +84,10 @@ public bool isAttacking;
           //instantiating projectiles from enemy towards player
          Instantiate(projectile, transform.position, Quaternion.identity); 
          time=timestore;  
-          
-      }
-        
+       }   
+ 
     }
 
-
-
-
-   
-
-
 }
+
 }
