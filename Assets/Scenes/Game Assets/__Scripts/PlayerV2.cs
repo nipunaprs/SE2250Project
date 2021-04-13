@@ -81,8 +81,10 @@ public class PlayerV2 : MonoBehaviour
         //Ensures currenthealth is at max health
         currentHealth = maxHealth;
 
-        //Sets healthbar
+        //Sets healthbar and xpbar
         healthBar.SetMaxHealth(maxHealth);
+        xpbar.SetXP(0);
+        xpbar.SetMaxXP(30);
 
         //Ensures player spawns with ability to teleport
         canTeleport = true;

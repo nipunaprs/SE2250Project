@@ -37,7 +37,7 @@ public class BigBoss : Enemy
 
         player = GameObject.FindGameObjectWithTag("PC").transform;
         health = 30;
-
+        this.xp = 20;
     }
 
     // Update is called once per frame

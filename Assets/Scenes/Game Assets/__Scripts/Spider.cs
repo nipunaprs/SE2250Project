@@ -21,7 +21,7 @@ public class Spider : Enemy
     public float min = 1f; 
 
     public float max = 2f; 
- 
+    
 
     public GameObject projectile; 
 
@@ -41,8 +41,9 @@ public bool isAttacking;
       // max x direction positiion for spider
       max = transform.position.x + 3; 
       //setting boolean attck to false at start of game 
-      attackNow= false; 
+      attackNow= false;
 
+        this.xp = 10;
       
    }
 
@@ -60,9 +61,13 @@ public bool isAttacking;
 
 
     void Update () {
-     
-     //setting attack value to true when player approaches spider 
-    if(Vector2.Distance(transform.position, player.position)<distanceBtw) {
+
+        
+
+
+
+        //setting attack value to true when player approaches spider 
+        if (Vector2.Distance(transform.position, player.position)<distanceBtw) {
      
        attackNow = true; 
 
