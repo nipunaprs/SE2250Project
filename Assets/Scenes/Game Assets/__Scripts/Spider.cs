@@ -45,9 +45,21 @@ public bool isAttacking;
 
       
    }
-    
 
-   void Update () {
+    //Attack on knife
+    void OnTriggerEnter2D(Collider2D col)
+    {
+        if (col.tag == "Knife")
+        {
+
+            TakeDamage(5);
+            //If hit with knife, start attacking
+            attackNow = true;
+        }
+    }
+
+
+    void Update () {
      
      //setting attack value to true when player approaches spider 
     if(Vector2.Distance(transform.position, player.position)<distanceBtw) {
