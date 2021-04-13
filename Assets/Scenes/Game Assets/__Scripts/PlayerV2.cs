@@ -51,7 +51,7 @@ public class PlayerV2 : MonoBehaviour
     private bool isInvincible;
     private int playerChoice;
 
-    private bool throwKnife;
+    private bool throwKnife=false;
     public GameObject knifePrefab;
     public Sprite invul;
     public Sprite tele;
